@@ -72,26 +72,14 @@ function ElegantShape({
 }
 
 function HeroGeometric({
-    badge = "Healthcare AI • Backed by Character Capital",
-    title1 = "Prevent Diabetes",
-    title2 = "Before It Starts",
+    badge = "NexFlow • Backed by Character Capital",
+    title1 = "The Future of",
+    title2 = "Preventative Health",
 }: {
     badge?: string;
     title1?: string;
     title2?: string;
 }) {
-    const fadeUpVariants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: (i: number) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1,
-                delay: 0.5 + i * 0.2,
-                ease: [0.25, 0.4, 0.25, 1],
-            },
-        }),
-    };
 
     return (
         <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
@@ -144,59 +132,47 @@ function HeroGeometric({
                 />
             </div>
 
-            <div className="relative z-10 container mx-auto px-4 md:px-6">
+            <div className="relative z-10 container mx-auto px-4 md:px-6 py-20 md:py-32">
                 <div className="max-w-3xl mx-auto text-center">
                     <motion.div
-                        custom={0}
-                        variants={fadeUpVariants}
-                        initial="hidden"
-                        animate="visible"
-                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.08] border border-white/[0.15] mb-12 md:mb-16 shadow-lg shadow-teal-500/10"
                     >
-                        <Circle className="h-2 w-2 fill-teal-500/80" />
-                        <span className="text-sm text-white/60 tracking-wide">
+                        <Circle className="h-2.5 w-2.5 fill-teal-400" />
+                        <span className="text-sm md:text-base font-medium text-white/80 tracking-wide">
                             {badge}
                         </span>
                     </motion.div>
 
                     <motion.div
-                        custom={1}
-                        variants={fadeUpVariants}
-                        initial="hidden"
-                        animate="visible"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
                     >
-                        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
-                                {title1}
-                            </span>
-                            <br />
-                            <span
-                                className={cn(
-                                    "bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-white/90 to-teal-300"
-                                )}
-                            >
-                                {title2}
+                        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-8 md:mb-10 tracking-tight leading-[1.1]">
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-white/90 to-teal-300">
+                                Become your own<br />health expert
                             </span>
                         </h1>
                     </motion.div>
 
                     <motion.div
-                        custom={2}
-                        variants={fadeUpVariants}
-                        initial="hidden"
-                        animate="visible"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.9, ease: "easeOut" }}
                     >
-                        <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
-                            Real-time, AI-powered insulin resistance detection using non-invasive lifestyle and biomarker data. Detect risk years earlier and personalize prevention.
+                        <p className="text-base sm:text-lg md:text-xl text-white/50 mb-10 md:mb-12 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
+                            AI-powered health insights built for proactive people who want to stay ahead.
                         </p>
                     </motion.div>
 
                     <motion.div
-                        custom={3}
-                        variants={fadeUpVariants}
-                        initial="hidden"
-                        animate="visible"
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 1.1, ease: "easeOut" }}
+                        className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
                     >
                         <a 
                             href="https://calendly.com/arjundixit3508/30min" 

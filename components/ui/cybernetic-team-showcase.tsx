@@ -26,7 +26,7 @@ const cardVariants = {
     onscreen: (i: number) => ({
         y: 0,
         opacity: 1,
-        transition: { type: "spring", bounce: 0.4, duration: 0.8, delay: i * 0.15 }
+        transition: { type: "spring" as const, bounce: 0.4, duration: 0.8, delay: i * 0.15 }
     })
 };
 
@@ -109,7 +109,7 @@ const ModernTeamShowcase: React.FC<ModernTeamShowcaseProps> = ({ teamMembers, ta
                 </motion.p>
             </div>
 
-            <div className="relative z-10 w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="relative z-10 w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                 {teamMembers.map((member, index) => (
                     <TeamMemberCard key={member.name} member={member} index={index} />
                 ))}

@@ -23,12 +23,6 @@ const teamMembers = [
     title: 'CTO & Technical Lead',
     bio: 'Research @ Princeton & Emory',
     initials: 'OG'
-  },
-  {
-    name: 'Aryaan Patel',
-    title: 'Business Consultant',
-    bio: 'Strategic advisor',
-    initials: 'AP'
   }
 ];
 
@@ -37,9 +31,9 @@ export default function Home() {
     <main>
       <NavBar />
       <ShapeLandingHero 
-        badge="Healthcare AI • Backed by Character Capital"
-        title1="Prevent Diabetes"
-        title2="Before It Starts"
+        badge="NexFlow • Backed by Character Capital"
+        title1="The Future of"
+        title2="Preventative Health"
       />
       <div id="features">
         <Features />
@@ -50,7 +44,7 @@ export default function Home() {
       <div id="team">
         <ModernTeamShowcase 
           teamMembers={teamMembers}
-          tagline="Led by researchers from top institutions, combining clinical expertise with cutting-edge AI"
+          tagline="Led by researchers from top institutions, building the future of proactive healthcare"
         />
       </div>
       <div id="careers">

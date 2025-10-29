@@ -65,7 +65,7 @@ export function NavBar({ items = defaultItems, className }: NavBarProps) {
       <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-teal-600 to-blue-600 text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-2 text-sm font-medium">
           <Briefcase className="w-4 h-4" />
-          <span>We're hiring! Join our mission to prevent diabetes.</span>
+          <span>We're hiring! Join our mission to transform healthcare.</span>
           <a 
             href="#careers" 
             className="underline hover:text-teal-100 transition-colors ml-2"

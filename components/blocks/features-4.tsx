@@ -6,10 +6,10 @@ export function Features() {
             <div className="mx-auto max-w-7xl space-y-8 px-6 md:space-y-16">
                 <div className="relative z-10 mx-auto max-w-2xl space-y-6 text-center md:space-y-8">
                     <h2 className="text-balance text-4xl font-bold lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
-                        How NexFlow Works
+                        Ask. Understand. Act.
                     </h2>
                     <p className="text-lg text-zinc-400">
-                        Comprehensive insulin resistance detection and prevention platform powered by advanced AI
+                        Instant guidance, smarter follow‑ups, and actionable plans
                     </p>
                 </div>
 
@@ -24,9 +24,9 @@ export function Features() {
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-teal-500/10 to-blue-500/10 border border-teal-500/20">
                                 <Activity className="size-4 text-teal-500" />
                             </div>
-                            <h3 className="text-sm font-semibold text-white">IRScore</h3>
+                            <h3 className="text-sm font-semibold text-white">Instant Answers</h3>
                         </div>
-                        <p className="text-sm text-zinc-400">Quantifies insulin resistance risk with precision comparable to clinical HOMA-IR testing on a 0-100 scale.</p>
+                        <p className="text-sm text-zinc-400">Clear guidance in seconds — no medical jargon.</p>
                     </a>
                     
                     <a 
@@ -39,9 +39,9 @@ export function Features() {
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20">
                                 <LineChart className="size-4 text-blue-500" />
                             </div>
-                            <h3 className="text-sm font-semibold text-white">Trajectory Panel</h3>
+                            <h3 className="text-sm font-semibold text-white">Smarter Questions</h3>
                         </div>
-                        <p className="text-sm text-zinc-400">Visualizes how daily habits and lifestyle choices impact your metabolic risk over time.</p>
+                        <p className="text-sm text-zinc-400">We ask what matters to tailor next steps to you.</p>
                     </a>
                     
                     <a 
@@ -54,9 +54,9 @@ export function Features() {
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-amber-500/10 to-orange-500/10 border border-amber-500/20">
                                 <Lightbulb className="size-4 text-amber-500" />
                             </div>
-                            <h3 className="text-sm font-semibold text-white">Personalized Recommendations</h3>
+                            <h3 className="text-sm font-semibold text-white">Actionable Plans</h3>
                         </div>
-                        <p className="text-sm text-zinc-400">AI-generated lifestyle modifications tailored to your unique metabolic profile.</p>
+                        <p className="text-sm text-zinc-400">Turn insights into habits, routines, and checklists you’ll follow.</p>
                     </a>
                     
                     <a 
@@ -69,9 +69,9 @@ export function Features() {
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20">
                                 <Zap className="size-4 text-purple-500" />
                             </div>
-                            <h3 className="text-sm font-semibold text-white">Non-Invasive Detection</h3>
+                            <h3 className="text-sm font-semibold text-white">Easy Monitoring</h3>
                         </div>
-                        <p className="text-sm text-zinc-400">Advanced AI modeling using lifestyle and biomarker data—no needles required.</p>
+                        <p className="text-sm text-zinc-400">Track your health using simple lifestyle data—no complex tests or procedures needed.</p>
                     </a>
                     
                     <a 
@@ -84,9 +84,9 @@ export function Features() {
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-emerald-500/10 to-green-500/10 border border-emerald-500/20">
                                 <Shield className="size-4 text-emerald-500" />
                             </div>
-                            <h3 className="text-sm font-semibold text-white">Clinical Integration</h3>
+                            <h3 className="text-sm font-semibold text-white">Provider Tools</h3>
                         </div>
-                        <p className="text-sm text-zinc-400">Seamless deployment for clinics with engagement metrics and patient dashboards.</p>
+                        <p className="text-sm text-zinc-400">Healthcare providers can easily integrate our platform to better serve their patients.</p>
                     </a>
                     
                     <a 
@@ -99,9 +99,9 @@ export function Features() {
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-rose-500/10 to-red-500/10 border border-rose-500/20">
                                 <TrendingUp className="size-4 text-rose-500" />
                             </div>
-                            <h3 className="text-sm font-semibold text-white">Predictive Analytics</h3>
+                            <h3 className="text-sm font-semibold text-white">Early Insights</h3>
                         </div>
-                        <p className="text-sm text-zinc-400">Detect insulin resistance risk years before traditional methods enable true prevention.</p>
+                        <p className="text-sm text-zinc-400">Identify potential health concerns early so you can take action before they become problems.</p>
                     </a>
                 </div>
             </div>
