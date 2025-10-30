@@ -10,19 +10,22 @@ const teamMembers = [
     name: 'Arjun Dixit',
     title: 'CEO & Product Lead',
     bio: 'Research @ Harvard & Stanford',
-    initials: 'AD'
+    initials: 'AD',
+    linkedin: 'https://www.linkedin.com/in/arjun-dixit-208192285/'
   },
   {
     name: 'Rishi Yedavalli',
     title: 'COO & Operations Lead',
     bio: 'Research @ Harvard & Carnegie Mellon',
-    initials: 'RY'
+    initials: 'RY',
+    linkedin: 'https://www.linkedin.com/in/rishi-yedavalli-a3a7512a8/'
   },
   {
     name: 'Om Guin',
     title: 'CTO & Technical Lead',
     bio: 'Research @ Princeton & Emory',
-    initials: 'OG'
+    initials: 'OG',
+    linkedin: 'https://www.linkedin.com/in/om-guin-ab7b64338/'
   }
 ];
 

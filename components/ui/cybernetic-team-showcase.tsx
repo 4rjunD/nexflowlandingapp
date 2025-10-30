@@ -13,6 +13,7 @@ interface TeamMember {
   title: string;
   bio: string;
   initials: string;
+  linkedin?: string;
 }
 
 interface ModernTeamShowcaseProps {
@@ -42,7 +43,7 @@ const TeamMemberCard = React.memo(({ member, index }: { member: TeamMember; inde
     const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["12deg", "-12deg"]);
     const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-12deg", "12deg"]);
 
-    const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const handleMouseMove = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
         const rect = e.currentTarget.getBoundingClientRect();
         x.set((e.clientX - rect.left) / rect.width - 0.5);
         y.set((e.clientY - rect.top) / rect.height - 0.5);
@@ -54,7 +55,10 @@ const TeamMemberCard = React.memo(({ member, index }: { member: TeamMember; inde
     }, [x, y]);
 
     return (
-        <motion.div
+        <motion.a
+            href={member.linkedin || '#'}
+            target={member.linkedin ? "_blank" : undefined}
+            rel={member.linkedin ? "noopener noreferrer" : undefined}
             variants={cardVariants}
             custom={index}
             initial="offscreen"
@@ -78,7 +82,7 @@ const TeamMemberCard = React.memo(({ member, index }: { member: TeamMember; inde
                 <p className="text-sm text-teal-400 mb-2">{member.title}</p>
                 <p className="text-xs text-zinc-400 mt-auto">{member.bio}</p>
             </div>
-        </motion.div>
+        </motion.a>
     );
 });
 
