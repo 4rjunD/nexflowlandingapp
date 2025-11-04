@@ -143,7 +143,7 @@ function PricingCard({ plan }: { plan: PricingCardProps }) {
     <div
       className={cn(
         "flex flex-col rounded-lg border border-zinc-800 bg-zinc-900/50 p-5 text-center",
-        plan.featured && "border-teal-500"
+        plan.featured && "border-blue-500"
       )}
       aria-label={`${plan.title} plan`}
     >
@@ -153,7 +153,7 @@ function PricingCard({ plan }: { plan: PricingCardProps }) {
       <ul className="space-y-2 mb-6 text-left">
         {plan.features.map((feature) => (
           <li key={feature} className="flex items-center text-sm text-zinc-300">
-            <CircleCheck className="mr-2 h-3 w-3 text-teal-500 flex-shrink-0" aria-hidden />
+            <CircleCheck className="mr-2 h-3 w-3 text-blue-500 flex-shrink-0" aria-hidden />
             <span>{feature}</span>
           </li>
         ))}
@@ -164,7 +164,7 @@ function PricingCard({ plan }: { plan: PricingCardProps }) {
           size="sm" 
           className={cn(
             "w-full",
-            plan.featured ? "bg-teal-500 hover:bg-teal-600" : "bg-zinc-800 hover:bg-zinc-700"
+            plan.featured ? "bg-blue-600 hover:bg-blue-700" : "bg-zinc-800 hover:bg-zinc-700"
           )}
         >
           {plan.cta}

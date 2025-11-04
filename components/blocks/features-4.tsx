@@ -18,11 +18,11 @@ export function Features() {
                         href="https://www.notion.so/NexFlow-Docs-232e50972bef80e5ac1ad84e773ca37e?source=copy_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-teal-500/30 transition-all cursor-pointer"
+                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-blue-500/30 transition-all cursor-pointer"
                     >
                         <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-teal-500/10 to-blue-500/10 border border-teal-500/20">
-                                <Activity className="size-4 text-teal-500" />
+                            <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-blue-500/10 to-blue-600/10 border border-blue-500/20">
+                                <Activity className="size-4 text-blue-500" />
                             </div>
                             <h3 className="text-sm font-semibold text-white">Instant Answers</h3>
                         </div>
@@ -33,7 +33,7 @@ export function Features() {
                         href="https://www.notion.so/NexFlow-Docs-232e50972bef80e5ac1ad84e773ca37e?source=copy_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-teal-500/30 transition-all cursor-pointer"
+                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-blue-500/30 transition-all cursor-pointer"
                     >
                         <div className="flex items-center gap-2">
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20">
@@ -48,7 +48,7 @@ export function Features() {
                         href="https://www.notion.so/NexFlow-Docs-232e50972bef80e5ac1ad84e773ca37e?source=copy_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-teal-500/30 transition-all cursor-pointer"
+                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-blue-500/30 transition-all cursor-pointer"
                     >
                         <div className="flex items-center gap-2">
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-amber-500/10 to-orange-500/10 border border-amber-500/20">
@@ -63,7 +63,7 @@ export function Features() {
                         href="https://www.notion.so/NexFlow-Docs-232e50972bef80e5ac1ad84e773ca37e?source=copy_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-teal-500/30 transition-all cursor-pointer"
+                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-blue-500/30 transition-all cursor-pointer"
                     >
                         <div className="flex items-center gap-2">
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20">
@@ -78,7 +78,7 @@ export function Features() {
                         href="https://www.notion.so/NexFlow-Docs-232e50972bef80e5ac1ad84e773ca37e?source=copy_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-teal-500/30 transition-all cursor-pointer"
+                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-blue-500/30 transition-all cursor-pointer"
                     >
                         <div className="flex items-center gap-2">
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-emerald-500/10 to-green-500/10 border border-emerald-500/20">
@@ -93,7 +93,7 @@ export function Features() {
                         href="https://www.notion.so/NexFlow-Docs-232e50972bef80e5ac1ad84e773ca37e?source=copy_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-teal-500/30 transition-all cursor-pointer"
+                        className="space-y-3 bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 hover:border-blue-500/30 transition-all cursor-pointer"
                     >
                         <div className="flex items-center gap-2">
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-rose-500/10 to-red-500/10 border border-rose-500/20">

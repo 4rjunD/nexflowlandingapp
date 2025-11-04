@@ -4,6 +4,7 @@ import Pricing from '@/components/ui/pricing-section'
 import ModernTeamShowcase from '@/components/ui/cybernetic-team-showcase'
 import { NavBar } from '@/components/ui/tubelight-navbar'
 import JobListingComponent from '@/components/ui/job-listing'
+import WaitlistSection from '@/components/ui/waitlist-section'
 
 const teamMembers = [
   {
@@ -53,6 +54,7 @@ export default function Home() {
       <div id="careers">
         <JobListingComponent />
       </div>
+      <WaitlistSection />
     </main>
   )
 }

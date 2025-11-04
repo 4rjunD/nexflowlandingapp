@@ -15,7 +15,7 @@ export default function JobListingComponent() {
           <h2 className="mb-4 text-4xl font-bold lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
             Careers
           </h2>
-          <h3 className="mb-6 text-3xl font-semibold text-teal-400">
+          <h3 className="mb-6 text-3xl font-semibold text-blue-400">
             Coming Soon!
           </h3>
           <p className="text-lg text-zinc-400 max-w-2xl mx-auto mb-4">

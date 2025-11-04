@@ -83,7 +83,7 @@ function HeroGeometric({
 
     return (
         <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.05] via-transparent to-teal-500/[0.05] blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.05] via-transparent to-blue-600/[0.05] blur-3xl" />
 
             <div className="absolute inset-0 overflow-hidden">
                 <ElegantShape
@@ -100,7 +100,7 @@ function HeroGeometric({
                     width={500}
                     height={120}
                     rotate={-15}
-                    gradient="from-teal-500/[0.15]"
+                    gradient="from-blue-600/[0.15]"
                     className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
                 />
 

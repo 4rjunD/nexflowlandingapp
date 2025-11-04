@@ -67,19 +67,19 @@ const TeamMemberCard = React.memo(({ member, index }: { member: TeamMember; inde
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
             style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-            className="group relative aspect-[3/4] w-full rounded-xl bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 border border-zinc-800 hover:border-teal-500/30 transition-all"
+            className="group relative aspect-[3/4] w-full rounded-xl bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 border border-zinc-800 hover:border-blue-500/30 transition-all"
         >
             <div 
                 style={{ transform: "translateZ(50px)", transformStyle: "preserve-3d" }}
                 className="absolute inset-4 flex flex-col items-center text-center bg-zinc-900/70 backdrop-blur-md p-6 rounded-lg border border-zinc-800"
             >
-                <div className="relative w-24 h-24 rounded-full mb-4 bg-gradient-to-br from-teal-500/20 to-blue-500/20 border-2 border-teal-500/30 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-teal-400">
+                <div className="relative w-24 h-24 rounded-full mb-4 bg-gradient-to-br from-blue-500/20 to-blue-600/20 border-2 border-blue-500/30 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-blue-400">
                         {member.initials}
                     </span>
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-1">{member.name}</h3>
-                <p className="text-sm text-teal-400 mb-2">{member.title}</p>
+                <p className="text-sm text-blue-400 mb-2">{member.title}</p>
                 <p className="text-xs text-zinc-400 mt-auto">{member.bio}</p>
             </div>
         </motion.a>
@@ -92,7 +92,7 @@ TeamMemberCard.displayName = 'TeamMemberCard';
 const ModernTeamShowcase: React.FC<ModernTeamShowcaseProps> = ({ teamMembers, tagline }) => {
     return (
         <div className="relative w-full min-h-screen bg-[#030303] flex flex-col items-center justify-center p-8 md:p-16 py-24 overflow-hidden">
-            <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-500/[0.03] via-transparent to-teal-500/[0.03] blur-3xl"></div>
+            <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-500/[0.03] via-transparent to-blue-600/[0.03] blur-3xl"></div>
             
             <div className="relative z-10 flex flex-col items-center text-center mb-16">
                 <motion.h1 
