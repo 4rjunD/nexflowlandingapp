@@ -39,7 +39,6 @@ export function WaitlistModal({ children }: WaitlistModalProps) {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          name: formData.get("name"),
           email: formData.get("email"),
         }),
       });
@@ -90,16 +89,6 @@ export function WaitlistModal({ children }: WaitlistModalProps) {
               </DialogDescription>
             </DialogHeader>
             <form onSubmit={handleSubmit} className="space-y-4 mt-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                  disabled={isSubmitting}
-                />
-              </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
                 <Input

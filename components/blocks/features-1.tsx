@@ -4,13 +4,13 @@ import { ReactNode } from 'react'
 
 export function Features() {
     return (
-        <section className="bg-zinc-50 py-8 md:py-14 dark:bg-transparent">
+        <section id="how-it-works" className="bg-zinc-50 py-8 md:py-14 dark:bg-transparent scroll-mt-24">
             <div className="@container mx-auto max-w-5xl px-6">
                 <div className="text-center">
                     <h2 className="text-balance text-4xl font-semibold lg:text-5xl">How it works</h2>
                     <p className="mt-2 text-muted-foreground">Three steps to finally understand your body. No lab visits. No guesswork.</p>
                 </div>
-                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-3 mx-auto mt-6 grid max-w-sm gap-6 *:text-center md:mt-8">
+                <div className="mx-auto mt-6 grid max-w-sm md:max-w-full grid-cols-1 md:grid-cols-3 gap-6 *:text-center md:mt-8">
                     <Card className="group shadow-black-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
@@ -21,7 +21,7 @@ export function Features() {
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Sync your Apple Watch, Oura, Whoop, or Fitbit in seconds. We start learning your baseline immediately.</p>
+                            <p className="text-sm">Sync your Apple Watch, Apple Health, Oura, or Whoop in seconds. We start learning your baseline immediately.</p>
                         </CardContent>
                     </Card>
 

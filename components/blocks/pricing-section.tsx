@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import { useState } from "react";
+import { WaitlistModal } from "@/components/ui/waitlist-modal";
 
 const tiers = [
   {
@@ -17,7 +17,7 @@ const tiers = [
       "Basic insights dashboard",
       "7-day data history",
     ],
-    cta: "Get Started",
+    cta: "Lock in Free",
     highlighted: false,
   },
   {
@@ -33,7 +33,7 @@ const tiers = [
       "Export your data",
       "Priority support",
     ],
-    cta: "Start Free Trial",
+    cta: "Lock in Price",
     highlighted: true,
   },
   {
@@ -48,7 +48,7 @@ const tiers = [
       "Advanced correlations",
       "Early access to new features",
     ],
-    cta: "Start Free Trial",
+    cta: "Lock in Price",
     highlighted: false,
   },
   {
@@ -71,15 +71,6 @@ const tiers = [
 ];
 
 function PricingButton({ tier }: { tier: typeof tiers[0] }) {
-  const [clicked, setClicked] = useState(false);
-
-  const handleClick = () => {
-    if (!tier.ctaLink) {
-      setClicked(true);
-      setTimeout(() => setClicked(false), 2000);
-    }
-  };
-
   if (tier.ctaLink) {
     return (
       <a href={tier.ctaLink} target="_blank" rel="noopener noreferrer" className="w-full">
@@ -94,26 +85,27 @@ function PricingButton({ tier }: { tier: typeof tiers[0] }) {
   }
 
   return (
-    <Button
-      className="w-full"
-      variant={tier.highlighted ? "default" : "outline"}
-      onClick={handleClick}
-    >
-      {clicked ? "Coming soon!" : tier.cta}
-    </Button>
+    <WaitlistModal>
+      <Button
+        className="w-full"
+        variant={tier.highlighted ? "default" : "outline"}
+      >
+        {tier.cta}
+      </Button>
+    </WaitlistModal>
   );
 }
 
 export function PricingSection() {
   return (
-    <section className="py-12 md:py-20">
+    <section id="pricing" className="py-12 md:py-20 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-6">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-semibold lg:text-5xl">
             Simple, transparent pricing
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Start free. Upgrade when you&apos;re ready to go deeper.
+            Join the waitlist now to lock in early pricing before we launch.
           </p>
         </div>
 

@@ -3,6 +3,9 @@ import { Hero } from '@/components/ui/hero-with-group-of-images-text-and-two-but
 import { BackedByResearch } from '@/components/blocks/backed-by-research'
 import { Features } from '@/components/blocks/features-1'
 import { PricingSection } from '@/components/blocks/pricing-section'
+import { FAQSection } from '@/components/blocks/faq-section'
+import { ExitIntentPopup } from '@/components/ui/exit-intent-popup'
+import { StickyCTA } from '@/components/ui/sticky-cta'
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <BackedByResearch />
       <Features />
       <PricingSection />
+      <FAQSection />
+      <ExitIntentPopup />
+      <StickyCTA />
     </main>
   )
 }
