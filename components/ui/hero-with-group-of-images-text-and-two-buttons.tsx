@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { MoveRight, Loader2, CheckCircle2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -102,9 +103,12 @@ function Hero() {
             {error && <p className="text-sm text-red-500">{error}</p>}
           </div>
           <div className="flex items-center justify-center order-1 md:order-2">
-            <img
-              src="/ProdddShottt.png"
+            <Image
+              src="/ProdddShottt_final.jpg"
               alt="NexFlow App"
+              width={1200}
+              height={900}
+              priority
               className="w-full max-w-md md:max-w-2xl md:scale-110"
             />
           </div>
