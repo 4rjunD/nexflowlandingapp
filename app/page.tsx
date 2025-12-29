@@ -4,6 +4,7 @@ import { BackedByResearch } from '@/components/blocks/backed-by-research'
 import { Features } from '@/components/blocks/features-1'
 import { PricingSection } from '@/components/blocks/pricing-section'
 import { FAQSection } from '@/components/blocks/faq-section'
+import { Footer7 } from '@/components/ui/footer-7'
 import { ExitIntentPopup } from '@/components/ui/exit-intent-popup'
 import { StickyCTA } from '@/components/ui/sticky-cta'
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <PricingSection />
       <FAQSection />
+      <Footer7 />
       <ExitIntentPopup />
       <StickyCTA />
     </main>
