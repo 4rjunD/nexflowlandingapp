@@ -7,6 +7,18 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/payment-success.html',
+        destination: '/payment-success',
+      },
+      {
+        source: '/payment-cancel.html',
+        destination: '/payment-cancel',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
