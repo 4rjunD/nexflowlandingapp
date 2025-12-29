@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function PaymentSuccess() {
+function PaymentSuccessContent() {
   const searchParams = useSearchParams();
   const tier = searchParams.get("tier") || "Pro";
   const [countdown, setCountdown] = useState(1);
@@ -85,5 +85,17 @@ export default function PaymentSuccess() {
         </p>
       </div>
     </main>
+  );
+}
+
+export default function PaymentSuccess() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen bg-background flex items-center justify-center p-6">
+        <div className="text-muted-foreground">Loading...</div>
+      </main>
+    }>
+      <PaymentSuccessContent />
+    </Suspense>
   );
 }
