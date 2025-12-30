@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "When do you launch?",
     answer:
-      "We're launching Q1 2026. Join the waitlist now to lock in early pricing and get 1 month of Pro free as one of the first 1,000 users.",
+      "We're launching Q1 2026. Join the waitlist now to lock in early pricing and get priority support forever as one of the first 1,000 users.",
   },
   {
     question: "Is there a free plan?",

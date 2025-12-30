@@ -89,7 +89,7 @@ function Hero() {
                 </form>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Users className="w-4 h-4" />
-                  <span><strong className="text-foreground">First 1,000 users</strong> get Pro free for 1 month</span>
+                  <span><strong className="text-foreground">First 1,000 users</strong> get priority support forever</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground pt-2">
                   <span>Works with:</span>

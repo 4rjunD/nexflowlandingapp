@@ -67,7 +67,7 @@ export function StickyCTA() {
               <span className="hidden sm:inline">Limited spots remaining.</span>
               <span className="sm:hidden">Limited spots!</span>
               {" "}
-              <span className="text-primary">Get 1 month Pro free.</span>
+              <span className="text-primary">Get priority support forever.</span>
             </p>
           </div>
 

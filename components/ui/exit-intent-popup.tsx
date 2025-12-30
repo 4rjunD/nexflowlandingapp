@@ -82,7 +82,7 @@ export function ExitIntentPopup() {
               </div>
               <DialogTitle className="text-2xl">Wait! Don&apos;t miss out</DialogTitle>
               <DialogDescription className="text-base pt-2">
-                Join now and get <span className="font-semibold text-foreground">1 month of Pro free</span> when we launch. Only for early waitlist members.
+                Join now and get <span className="font-semibold text-foreground">priority support forever</span> when we launch. Only for the first 1,000 users.
               </DialogDescription>
             </DialogHeader>
             <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -106,7 +106,7 @@ export function ExitIntentPopup() {
                   </>
                 ) : (
                   <>
-                    Claim My Free Month
+                    Join the Waitlist
                     <MoveRight className="h-4 w-4" />
                   </>
                 )}
