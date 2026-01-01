@@ -17,11 +17,11 @@ export function Features() {
                                 <Watch className="size-6" aria-hidden />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium">1. Connect your wearable</h3>
+                            <h3 className="mt-6 font-medium">1. Connect your health data</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Sync your Apple Watch, Apple Health, Oura, or Whoop in seconds. We start learning your baseline immediately.</p>
+                            <p className="text-sm">Link Apple Health, your smartwatch, or log manually. We learn your baseline so we can measure what changes.</p>
                         </CardContent>
                     </Card>
 
@@ -31,11 +31,11 @@ export function Features() {
                                 <FlaskConical className="size-6" aria-hidden />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium">2. Run a 2-week experiment</h3>
+                            <h3 className="mt-6 font-medium">2. Test a habit for 2 weeks</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Pick something to test: no caffeine after noon, 10k steps daily, or cold showers. We track everything automatically.</p>
+                            <p className="text-sm">Pick something to try: cutting caffeine, a new sleep schedule, daily walks, or any routine you&apos;ve been curious about.</p>
                         </CardContent>
                     </Card>
 
@@ -49,7 +49,7 @@ export function Features() {
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Get clear before/after comparisons of your sleep, energy, and focus. Keep what works. Drop what doesn&apos;t.</p>
+                            <p className="text-sm">Get clear before/after proof of how your sleep, energy, and focus changed. Keep what works. Drop what doesn&apos;t.</p>
                         </CardContent>
                     </Card>
                 </div>
