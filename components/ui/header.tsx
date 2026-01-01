@@ -26,11 +26,6 @@ function Header1() {
             href: "#how-it-works",
             description: "",
         },
-        {
-            title: "Pricing",
-            href: "#pricing",
-            description: "",
-        },
     ];
 
     const [isOpen, setOpen] = useState(false);
