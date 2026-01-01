@@ -54,7 +54,7 @@ function Hero() {
                 Finally know what actually works for your body.
               </h1>
               <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-                You&apos;ve tried everything. Morning routines, supplements, sleep hacks, cutting caffeine. But did any of it actually work? We help you test and prove it in 2 weeks.
+                Morning routines, supplements, sleep hacks, cutting caffeine. Did any of it actually work? Test and prove it in 2 weeks.
               </p>
             </div>
             {isSuccess ? (
