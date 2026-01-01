@@ -47,7 +47,7 @@ function Hero() {
         <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2">
           <div className="flex gap-4 flex-col order-2 md:order-1">
             <div>
-              <Badge variant="outline">Join 500+ early members · Launching Q1 2026</Badge>
+              <Badge variant="outline">Launching Q1 2026</Badge>
             </div>
             <div className="flex gap-4 flex-col">
               <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular">

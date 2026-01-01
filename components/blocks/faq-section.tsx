@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "When do you launch?",
     answer:
-      "We're launching Q1 2026. Join our 500+ early members now to lock in early pricing and get priority support forever.",
+      "We're launching Q1 2026. Join now to lock in early pricing and get priority support forever.",
   },
   {
     question: "Is there a free plan?",
