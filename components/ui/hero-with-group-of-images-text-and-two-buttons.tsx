@@ -51,10 +51,10 @@ function Hero() {
             </div>
             <div className="flex gap-4 flex-col">
               <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular">
-                Does that habit actually work?
+                Finally know what actually works for your body.
               </h1>
               <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-                You&apos;ve tried the routines, the supplements, the sleep hacks. Test them for 2 weeks and finally see what actually works for YOUR body.
+                You&apos;ve tried everything. Morning routines, supplements, sleep hacks, cutting caffeine. But did any of it actually work? We help you test and prove it in 2 weeks.
               </p>
             </div>
             {isSuccess ? (
