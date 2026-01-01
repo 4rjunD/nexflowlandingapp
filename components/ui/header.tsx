@@ -86,7 +86,7 @@ function Header1() {
                     </NavigationMenu>
                 </div>
                 <div className="flex lg:justify-center">
-                    <p className="font-bold text-2xl tracking-tight font-[family-name:var(--font-inter)]">NexFlow</p>
+                    <p className="font-semibold text-2xl tracking-tight font-[family-name:var(--font-geist-sans)]">NexFlow</p>
                 </div>
                 <div className="flex justify-end w-full gap-4">
                     <AppStoreButton />
