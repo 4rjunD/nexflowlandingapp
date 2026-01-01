@@ -47,14 +47,14 @@ function Hero() {
         <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2">
           <div className="flex gap-4 flex-col order-2 md:order-1">
             <div>
-              <Badge variant="outline">Backed by Character Capital · Launching Q1 2026</Badge>
+              <Badge variant="outline">Join 500+ early members · Launching Q1 2026</Badge>
             </div>
             <div className="flex gap-4 flex-col">
               <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular">
-                Run health experiments on yourself.
+                Does that habit actually work?
               </h1>
               <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-                Connect your watch. Try something for two weeks, like cutting coffee or sleeping more. We&apos;ll show you proof of what actually changes your energy, sleep, and focus forever.
+                You&apos;ve tried the routines, the supplements, the sleep hacks. Test them for 2 weeks and finally see what actually works for YOUR body.
               </p>
             </div>
             {isSuccess ? (
@@ -82,14 +82,14 @@ function Hero() {
                       </>
                     ) : (
                       <>
-                        Join Waitlist <MoveRight className="w-4 h-4" />
+                        Get Early Access <MoveRight className="w-4 h-4" />
                       </>
                     )}
                   </Button>
                 </form>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Users className="w-4 h-4" />
-                  <span><strong className="text-foreground">First 1,000 users</strong> get priority support forever</span>
+                  <span><strong className="text-foreground">Early members</strong> get priority support forever</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground pt-2">
                   <span>Works with:</span>

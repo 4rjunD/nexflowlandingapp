@@ -18,17 +18,17 @@ const faqs = [
   {
     question: "How is this different from my wearable's app?",
     answer:
-      "Your wearable shows you data. NexFlow helps you run experiments to prove what actually works for YOU. Instead of guessing, you'll have real before/after evidence of what improves your sleep, energy, and focus.",
+      "Your wearable shows you data. NexFlow helps you test your habits and routines to prove what actually works for YOU. Instead of guessing, you'll have real before/after evidence of what improves your sleep, energy, and focus.",
   },
   {
-    question: "What kind of experiments can I run?",
+    question: "What habits can I test?",
     answer:
-      "Anything you want to test: no caffeine after noon, 10k steps daily, cold showers, meditation, different sleep times, supplements, and more. We track everything and show you the measurable impact.",
+      "Anything you want to prove: no caffeine after noon, 10k steps daily, cold showers, meditation, different sleep times, supplements, and more. We track everything and show you the measurable impact.",
   },
   {
     question: "When do you launch?",
     answer:
-      "We're launching Q1 2026. Join the waitlist now to lock in early pricing and get priority support forever as one of the first 1,000 users.",
+      "We're launching Q1 2026. Join our 500+ early members now to lock in early pricing and get priority support forever.",
   },
   {
     question: "Is there a free plan?",
