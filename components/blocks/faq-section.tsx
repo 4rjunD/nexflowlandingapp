@@ -6,34 +6,29 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    question: "What wearables are supported?",
+    question: "Do I need a smartwatch?",
     answer:
-      "NexFlow works with Apple Watch, Apple Health, Oura Ring, and Whoop. Connect in seconds and start tracking immediately.",
+      "No. Works with Apple Health, any smartwatch, or just manual logging. Use what you have.",
   },
   {
-    question: "Is my health data private and secure?",
+    question: "Is my data private?",
     answer:
-      "Absolutely. Your data is encrypted end-to-end and never sold to third parties. You own your data and can delete it anytime. Privacy and security are core to everything we build.",
+      "Yes. Encrypted, never sold, delete anytime. Your data is yours.",
   },
   {
-    question: "How is this different from my wearable's app?",
+    question: "How is this different from my health app?",
     answer:
-      "Your wearable shows you data. NexFlow helps you test your habits and routines to prove what actually works for YOU. Instead of guessing, you'll have real before/after evidence of what improves your sleep, energy, and focus.",
+      "Your health app shows data. We show proof. Before and after. What actually changed.",
   },
   {
-    question: "What habits can I test?",
+    question: "What can I test?",
     answer:
-      "Anything you want to prove: no caffeine after noon, 10k steps daily, cold showers, meditation, different sleep times, supplements, and more. We track everything and show you the measurable impact.",
+      "Anything. No caffeine. More sleep. Cold showers. Meditation. Supplements. If you can try it, we can measure it.",
   },
   {
-    question: "When do you launch?",
+    question: "Is it free?",
     answer:
-      "We're launching Q1 2026. Join now to lock in early pricing and get priority support forever.",
-  },
-  {
-    question: "Is there a free plan?",
-    answer:
-      "Yes! Our Discovery plan is free forever and lets you connect 1 wearable and run 1 experiment per month. Perfect for getting started.",
+      "Yes. Free to start, no credit card. Upgrade when you want more.",
   },
 ];
 
@@ -82,11 +77,8 @@ export function FAQSection() {
       <div className="container mx-auto max-w-3xl px-6">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-semibold lg:text-5xl">
-            Frequently asked questions
+            Questions? Answered.
           </h2>
-          <p className="mt-3 text-muted-foreground">
-            Everything you need to know about NexFlow.
-          </p>
         </div>
         <div className="divide-y divide-border border-t border-border">
           {faqs.map((faq, index) => (

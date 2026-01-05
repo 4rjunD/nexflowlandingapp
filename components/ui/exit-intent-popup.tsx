@@ -80,9 +80,9 @@ export function ExitIntentPopup() {
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                 <Gift className="h-6 w-6 text-primary" />
               </div>
-              <DialogTitle className="text-2xl">Wait! Don&apos;t miss out</DialogTitle>
+              <DialogTitle className="text-2xl">One more thing.</DialogTitle>
               <DialogDescription className="text-base pt-2">
-                Join now and get <span className="font-semibold text-foreground">priority support forever</span> when we launch. Early members only.
+                Get early access and be the first to know what actually works for your body.
               </DialogDescription>
             </DialogHeader>
             <form onSubmit={handleSubmit} className="space-y-4 mt-4">

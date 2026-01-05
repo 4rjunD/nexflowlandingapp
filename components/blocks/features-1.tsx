@@ -7,8 +7,8 @@ export function Features() {
         <section id="how-it-works" className="bg-zinc-50 py-8 md:py-14 dark:bg-transparent scroll-mt-24">
             <div className="@container mx-auto max-w-5xl px-6">
                 <div className="text-center">
-                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl">How it works</h2>
-                    <p className="mt-2 text-muted-foreground">Three steps to finally understand your body. No lab visits. No guesswork.</p>
+                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl">Simple as 1, 2, proof.</h2>
+                    <p className="mt-2 text-muted-foreground">Two weeks. One habit. Real answers.</p>
                 </div>
                 <div className="mx-auto mt-6 grid max-w-sm md:max-w-full grid-cols-1 md:grid-cols-3 gap-6 *:text-center md:mt-8">
                     <Card className="group shadow-black-950/5">
@@ -17,11 +17,11 @@ export function Features() {
                                 <Watch className="size-6" aria-hidden />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium">1. Connect your health data</h3>
+                            <h3 className="mt-6 font-medium">1. Connect</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Link Apple Health, your smartwatch, or log manually. We learn your baseline so we can measure what changes.</p>
+                            <p className="text-sm">Sync your phone, watch, or just log how you feel. We capture your baseline automatically.</p>
                         </CardContent>
                     </Card>
 
@@ -31,11 +31,11 @@ export function Features() {
                                 <FlaskConical className="size-6" aria-hidden />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium">2. Test a habit for 2 weeks</h3>
+                            <h3 className="mt-6 font-medium">2. Test</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Pick something to try: cutting caffeine, a new sleep schedule, daily walks, or any routine you&apos;ve been curious about.</p>
+                            <p className="text-sm">Pick a habit you&apos;ve been curious about. No caffeine. More sleep. Cold showers. Anything.</p>
                         </CardContent>
                     </Card>
 
@@ -45,11 +45,11 @@ export function Features() {
                                 <TrendingUp className="size-6" aria-hidden />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium">3. See what actually changed</h3>
+                            <h3 className="mt-6 font-medium">3. Know</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm">Get clear before/after proof of how your sleep, energy, and focus changed. Keep what works. Drop what doesn&apos;t.</p>
+                            <p className="text-sm">See exactly what changed. Sleep. Energy. Focus. Now you know what works for you.</p>
                         </CardContent>
                     </Card>
                 </div>

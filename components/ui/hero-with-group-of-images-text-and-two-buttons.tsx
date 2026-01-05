@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { MoveRight, Loader2, CheckCircle2, Users } from "lucide-react";
+import { MoveRight, Loader2, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
@@ -51,10 +51,10 @@ function Hero() {
             </div>
             <div className="flex gap-4 flex-col">
               <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular">
-                Finally know what actually works for your body.
+                Life&apos;s too short for generic advice.
               </h1>
               <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-                Morning routines, supplements, sleep hacks, cutting caffeine. Did any of it actually work? Test and prove it in 2 weeks.
+                Supplements. Routines. Sleep hacks. How much have you spent on things that didn&apos;t work? Pick one. Test it. See the proof.
               </p>
             </div>
             {isSuccess ? (
@@ -87,17 +87,9 @@ function Hero() {
                     )}
                   </Button>
                 </form>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Users className="w-4 h-4" />
-                  <span><strong className="text-foreground">Early members</strong> get priority support forever</span>
-                </div>
-                <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground pt-2">
-                  <span>Works with:</span>
-                  <span className="px-2 py-1 bg-muted rounded">Apple Watch</span>
-                  <span className="px-2 py-1 bg-muted rounded">Health</span>
-                  <span className="px-2 py-1 bg-muted rounded">Oura</span>
-                  <span className="px-2 py-1 bg-muted rounded">Whoop</span>
-                </div>
+                <p className="text-sm text-muted-foreground">
+                  Free to start. No credit card required.
+                </p>
               </div>
             )}
             {error && <p className="text-sm text-red-500">{error}</p>}
