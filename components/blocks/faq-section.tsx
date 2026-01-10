@@ -6,29 +6,54 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    question: "Do I need a smartwatch?",
+    question: "What does NexFlow do?",
     answer:
-      "No. Works with Apple Health, any smartwatch, or just manual logging. Use what you have.",
-  },
-  {
-    question: "Is my data private?",
-    answer:
-      "Yes. Encrypted, never sold, delete anytime. Your data is yours.",
+      "NexFlow runs 2 week experiments on your habits and shows how your sleep, energy, and focus changed using your data.",
   },
   {
     question: "How is this different from my health app?",
     answer:
-      "Your health app shows data. We show proof. Before and after. What actually changed.",
+      "Your health app tracks. NexFlow tests. You change one habit and we show clear before and after so you know what actually works for you.",
   },
   {
-    question: "What can I test?",
+    question: "Do I need a smartwatch?",
     answer:
-      "Anything. No caffeine. More sleep. Cold showers. Meditation. Supplements. If you can try it, we can measure it.",
+      "No. NexFlow works with Apple Health, most wearables, or simple manual logging.",
   },
   {
-    question: "Is it free?",
+    question: "Who is NexFlow for?",
     answer:
-      "Yes. Free to start, no credit card. Upgrade when you want more.",
+      "People who already care about health and performance and want data backed answers instead of generic advice.",
+  },
+  {
+    question: "Is there a free version or free trial?",
+    answer:
+      "No. NexFlow is paid only so the product can stay focused on serious users and never rely on ads or selling data.",
+  },
+  {
+    question: "What do I get when I sign up?",
+    answer:
+      "You can connect your data, set up 2 week experiments, see before and after results, and chat with the health assistant about your patterns.",
+  },
+  {
+    question: "How long until I see results?",
+    answer:
+      "Usually by the end of your first 2 week experiment you will see how that habit affected your sleep, energy, or focus.",
+  },
+  {
+    question: "Is this medical advice?",
+    answer:
+      "No. NexFlow is for habit and routine experiments. It does not diagnose or treat. Talk to your doctor for medical decisions.",
+  },
+  {
+    question: "Is my data private?",
+    answer:
+      "Yes. Your data is encrypted, never sold, and you can delete your account and all data at any time.",
+  },
+  {
+    question: "What can I test with NexFlow?",
+    answer:
+      "Caffeine timing, sleep schedule, steps, exercise, screens, cold showers, meditation, alcohol windows, and other daily habits.",
   },
 ];
 

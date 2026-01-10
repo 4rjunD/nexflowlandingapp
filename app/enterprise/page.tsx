@@ -1,0 +1,19 @@
+import { EnterpriseHeader } from '@/components/ui/enterprise-header'
+import { Footer7 } from '@/components/ui/footer-7'
+import { EnterpriseHero } from '@/components/blocks/enterprise-hero'
+import { EnterpriseFeaturesSection } from '@/components/blocks/enterprise-features-section'
+import { EnterpriseFeatures } from '@/components/blocks/features-10'
+import { EnterpriseContact } from '@/components/blocks/enterprise-contact'
+
+export default function Enterprise() {
+  return (
+    <main>
+      <EnterpriseHeader />
+      <EnterpriseHero />
+      <EnterpriseFeaturesSection />
+      <EnterpriseFeatures />
+      <EnterpriseContact />
+      <Footer7 />
+    </main>
+  )
+}
