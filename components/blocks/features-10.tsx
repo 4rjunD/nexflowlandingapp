@@ -20,7 +20,7 @@ const itemVariants = {
 
 export function EnterpriseFeatures() {
     return (
-        <section className="py-24 md:py-32 bg-neutral-900">
+        <section className="py-24 md:py-32 bg-white">
             <div className="mx-auto max-w-6xl px-6">
                 <motion.div
                     className="text-center mb-16"
@@ -29,7 +29,7 @@ export function EnterpriseFeatures() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-medium text-white font-[family-name:var(--font-playfair)]">
+                    <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 font-[family-name:var(--font-playfair)]">
                         Built for organizations that invest in their people
                     </h2>
                 </motion.div>
@@ -68,13 +68,13 @@ export function EnterpriseFeatures() {
 
                 {/* ROI Metrics */}
                 <motion.div
-                    className="mt-16 bg-neutral-800/50 rounded-2xl border border-neutral-700/50 p-8 md:p-12"
+                    className="mt-16 bg-neutral-50 rounded-2xl border border-neutral-200 p-8 md:p-12"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                    <p className="text-center text-2xl md:text-3xl font-medium text-white mb-10 font-[family-name:var(--font-playfair)]">
+                    <p className="text-center text-2xl md:text-3xl font-medium text-neutral-900 mb-10 font-[family-name:var(--font-playfair)]">
                         Measurable ROI. Fewer sick days. Higher productivity. Happier teams.
                     </p>
 
@@ -99,16 +99,16 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ icon: Icon, title, description, children }: FeatureCardProps) => (
     <motion.div
-        className="bg-neutral-800/50 rounded-2xl border border-neutral-700/50 p-6 flex flex-col"
+        className="bg-neutral-50 rounded-2xl border border-neutral-200 p-6 flex flex-col"
         variants={itemVariants}
     >
         <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 rounded-xl bg-neutral-700 flex items-center justify-center">
-                <Icon className="w-5 h-5 text-neutral-300" />
+            <div className="w-10 h-10 rounded-xl bg-neutral-200 flex items-center justify-center">
+                <Icon className="w-5 h-5 text-neutral-600" />
             </div>
-            <h3 className="text-lg font-medium text-white">{title}</h3>
+            <h3 className="text-lg font-medium text-neutral-900">{title}</h3>
         </div>
-        <p className="text-neutral-400 text-sm mb-6">{description}</p>
+        <p className="text-neutral-600 text-sm mb-6">{description}</p>
         <div className="mt-auto">
             {children}
         </div>
@@ -122,20 +122,20 @@ interface MetricCardProps {
 
 const MetricCard = ({ value, label }: MetricCardProps) => (
     <div className="text-center">
-        <p className="text-3xl md:text-4xl font-semibold text-emerald-400 font-[family-name:var(--font-playfair)]">
+        <p className="text-3xl md:text-4xl font-semibold text-emerald-600 font-[family-name:var(--font-playfair)]">
             {value}
         </p>
-        <p className="text-neutral-400 text-sm mt-1">{label}</p>
+        <p className="text-neutral-600 text-sm mt-1">{label}</p>
     </div>
 )
 
 const AnalyticsVisual = () => (
-    <div className="bg-neutral-700/50 rounded-xl p-4">
+    <div className="bg-white rounded-xl p-4 border border-neutral-200">
         <div className="flex items-end justify-between gap-2 h-28">
             {[65, 78, 45, 89, 72, 94, 68].map((height, i) => (
                 <div key={i} className="flex-1 flex flex-col justify-end">
                     <div
-                        className="bg-gradient-to-t from-emerald-500 to-emerald-400 rounded-t min-h-[4px]"
+                        className="bg-gradient-to-t from-emerald-600 to-emerald-500 rounded-t min-h-[4px]"
                         style={{ height: `${height}%` }}
                     />
                 </div>
@@ -155,12 +155,12 @@ const TeamVisual = () => (
             { name: 'Sales', count: 18, health: 82 },
             { name: 'Marketing', count: 12, health: 91 },
         ].map((team, i) => (
-            <div key={i} className="bg-neutral-700/50 rounded-lg p-3">
+            <div key={i} className="bg-white rounded-lg p-3 border border-neutral-200">
                 <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm text-neutral-300">{team.name}</span>
+                    <span className="text-sm text-neutral-700">{team.name}</span>
                     <span className="text-xs text-neutral-500">{team.count} members</span>
                 </div>
-                <div className="h-1.5 bg-neutral-600 rounded-full overflow-hidden">
+                <div className="h-1.5 bg-neutral-200 rounded-full overflow-hidden">
                     <div
                         className="h-full bg-emerald-500 rounded-full"
                         style={{ width: `${team.health}%` }}
@@ -178,12 +178,12 @@ const ProgramVisual = () => (
             { name: 'Step Goal Program', participants: 203, improvement: '+8%' },
             { name: 'Meditation Trial', participants: 89, improvement: '+15%' },
         ].map((program, i) => (
-            <div key={i} className="bg-neutral-700/50 rounded-lg p-3 flex justify-between items-center">
+            <div key={i} className="bg-white rounded-lg p-3 border border-neutral-200 flex justify-between items-center">
                 <div>
-                    <p className="text-sm text-neutral-300">{program.name}</p>
+                    <p className="text-sm text-neutral-700">{program.name}</p>
                     <p className="text-xs text-neutral-500">{program.participants} participants</p>
                 </div>
-                <span className="text-emerald-400 text-sm font-medium">{program.improvement}</span>
+                <span className="text-emerald-600 text-sm font-medium">{program.improvement}</span>
             </div>
         ))}
     </div>
