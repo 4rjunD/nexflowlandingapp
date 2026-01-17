@@ -54,7 +54,7 @@ function Hero() {
                 Life&apos;s too short for generic advice.
               </h1>
               <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-                Supplements. Routines. Sleep hacks. How much have you spent on things that didn&apos;t work? Pick one. Test it. See the proof.
+                Supplements. Routines. Sleep hacks. How much have you spent on things that didn&apos;t work? Pick one. Test it. See the proof. Optimize your lifestyle.
               </p>
             </div>
             {isSuccess ? (

@@ -19,13 +19,13 @@ function EnterpriseHeader() {
             description: "",
         },
         {
-            title: "How it Works",
-            href: "/#how-it-works",
+            title: "Enterprise",
+            href: "/enterprise",
             description: "",
         },
         {
-            title: "Enterprise",
-            href: "/enterprise",
+            title: "Playbook",
+            href: "/playbook",
             description: "",
         },
     ];

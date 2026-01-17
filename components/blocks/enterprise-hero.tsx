@@ -52,10 +52,10 @@ export function EnterpriseHero() {
                                 </Link>
 
                                 <h1 className="mt-8 max-w-4xl mx-auto text-balance text-5xl md:text-6xl lg:mt-16 xl:text-7xl font-medium tracking-tight text-neutral-900 font-[family-name:var(--font-playfair)]">
-                                    Healthy teams perform better.
+                                    Your outsourced health team.
                                 </h1>
                                 <p className="mx-auto mt-8 max-w-2xl text-balance text-lg text-neutral-600 font-[family-name:var(--font-geist-sans)]">
-                                    Give your workforce the tools to optimize their health. Reduce sick days. Boost productivity. See real results across your organization.
+                                    We help each person improve sleep, energy, stress, and mental wellbeing through personalized guidance and lightweight check-ins. Better health means better work. No HR surveillance. No invasive tracking.
                                 </p>
                             </AnimatedGroup>
 

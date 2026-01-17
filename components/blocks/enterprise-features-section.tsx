@@ -35,12 +35,12 @@ export function EnterpriseFeaturesSection() {
                     >
                         <div className="space-y-2 md:space-y-1">
                             <h2 className="text-neutral-900 text-3xl md:text-[40px] font-medium leading-tight md:leading-[53px] font-[family-name:var(--font-playfair)]">
-                                Insights that drive decisions.
+                                How it works.
                             </h2>
                         </div>
 
                         <p className="text-neutral-600 text-sm md:text-[15px] leading-6 mt-2">
-                            Track wellness trends across your organization. Identify patterns before they become problems. Make data-driven decisions about workplace health initiatives.
+                            Every person gets a personal health baseline and ongoing support for physical and mental wellbeing. Reduced burnout. Improved focus. People who feel good do better work.
                         </p>
 
                         <ul className="mt-6 space-y-4">
@@ -49,8 +49,8 @@ export function EnterpriseFeaturesSection() {
                                     <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
                                 </div>
                                 <div>
-                                    <p className="text-neutral-900 font-medium">Real-time analytics</p>
-                                    <p className="text-neutral-500 text-sm">Monitor team wellness metrics as they update</p>
+                                    <p className="text-neutral-900 font-medium">Physical + mental health</p>
+                                    <p className="text-neutral-500 text-sm">Sleep, energy, stress levels, anxiety, and mood tracked together</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -58,8 +58,8 @@ export function EnterpriseFeaturesSection() {
                                     <div className="w-2 h-2 rounded-full bg-sky-500"></div>
                                 </div>
                                 <div>
-                                    <p className="text-neutral-900 font-medium">Privacy-first design</p>
-                                    <p className="text-neutral-500 text-sm">Aggregate data only. Individual metrics stay private</p>
+                                    <p className="text-neutral-900 font-medium">Not an HR tool</p>
+                                    <p className="text-neutral-500 text-sm">We work directly with your people. Private, personal, no surveillance</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -67,8 +67,8 @@ export function EnterpriseFeaturesSection() {
                                     <div className="w-2 h-2 rounded-full bg-amber-500"></div>
                                 </div>
                                 <div>
-                                    <p className="text-neutral-900 font-medium">Actionable reports</p>
-                                    <p className="text-neutral-500 text-sm">Weekly insights delivered to leadership</p>
+                                    <p className="text-neutral-900 font-medium">Productivity that lasts</p>
+                                    <p className="text-neutral-500 text-sm">When people feel better, they focus better. Less burnout, more output</p>
                                 </div>
                             </li>
                         </ul>

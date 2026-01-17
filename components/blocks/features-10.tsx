@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion'
-import { BarChart3, Users, TrendingUp } from 'lucide-react'
+import { Sparkles, FlaskConical, CalendarCheck } from 'lucide-react'
 import { ReactNode } from 'react'
 
 const containerVariants = {
@@ -30,8 +30,11 @@ export function EnterpriseFeatures() {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 font-[family-name:var(--font-playfair)]">
-                        Built for organizations that invest in their people
+                        What we do for your team
                     </h2>
+                    <p className="mt-4 text-neutral-600 max-w-2xl mx-auto">
+                        Physical health, mental wellbeing, and sustainable productivity. Not another HR checkbox. Real support that people actually use.
+                    </p>
                 </motion.div>
 
                 <motion.div
@@ -42,31 +45,31 @@ export function EnterpriseFeatures() {
                     viewport={{ once: true, amount: 0.2 }}
                 >
                     <FeatureCard
-                        icon={BarChart3}
-                        title="Team Analytics"
-                        description="Aggregate insights across your organization. Track wellness trends without compromising individual privacy."
+                        icon={Sparkles}
+                        title="Personalized Guidance"
+                        description="Weekly recommendations for sleep, stress, energy, and mental clarity. Simple advice tailored to each person's life."
                     >
-                        <AnalyticsVisual />
+                        <GuidanceVisual />
                     </FeatureCard>
 
                     <FeatureCard
-                        icon={Users}
-                        title="Team Management"
-                        description="Invite employees, organize by department, and monitor participation rates across your workforce."
+                        icon={FlaskConical}
+                        title="Health Experiments"
+                        description="Small changes that compound. Adjust sleep timing, reduce anxiety triggers, improve recovery. Low effort, measurable results."
                     >
-                        <TeamVisual />
+                        <ExperimentsVisual />
                     </FeatureCard>
 
                     <FeatureCard
-                        icon={TrendingUp}
-                        title="Wellness Programs"
-                        description="Run organization-wide experiments. Compare results. Scale what works across teams."
+                        icon={CalendarCheck}
+                        title="Monthly Health Sprints"
+                        description="Team-wide themes like burnout prevention, stress recovery, or focus improvement. Shared momentum, individual progress."
                     >
-                        <ProgramVisual />
+                        <SprintsVisual />
                     </FeatureCard>
                 </motion.div>
 
-                {/* ROI Metrics */}
+                {/* What Leadership Gets */}
                 <motion.div
                     className="mt-16 bg-neutral-50 rounded-2xl border border-neutral-200 p-8 md:p-12"
                     initial={{ opacity: 0, y: 30 }}
@@ -74,15 +77,18 @@ export function EnterpriseFeatures() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                    <p className="text-center text-2xl md:text-3xl font-medium text-neutral-900 mb-10 font-[family-name:var(--font-playfair)]">
-                        Measurable ROI. Fewer sick days. Higher productivity. Happier teams.
+                    <p className="text-center text-2xl md:text-3xl font-medium text-neutral-900 mb-4 font-[family-name:var(--font-playfair)]">
+                        What leadership receives
+                    </p>
+                    <p className="text-center text-neutral-600 mb-10 max-w-xl mx-auto">
+                        High-level engagement summaries and participation trends. No individual data. Ever.
                     </p>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-                        <MetricCard value="-32%" label="Sick Days" />
-                        <MetricCard value="+18%" label="Productivity" />
-                        <MetricCard value="+24%" label="Retention" />
-                        <MetricCard value="+41%" label="Engagement" />
+                        <MetricCard value="100%" label="Privacy Protected" />
+                        <MetricCard value="Weekly" label="Progress Reports" />
+                        <MetricCard value="Monthly" label="Health Sprints" />
+                        <MetricCard value="1" label="Dedicated Health Ops" />
                     </div>
                 </motion.div>
             </div>
@@ -129,61 +135,62 @@ const MetricCard = ({ value, label }: MetricCardProps) => (
     </div>
 )
 
-const AnalyticsVisual = () => (
-    <div className="bg-white rounded-xl p-4 border border-neutral-200">
-        <div className="flex items-end justify-between gap-2 h-28">
-            {[65, 78, 45, 89, 72, 94, 68].map((height, i) => (
-                <div key={i} className="flex-1 flex flex-col justify-end">
-                    <div
-                        className="bg-gradient-to-t from-emerald-600 to-emerald-500 rounded-t min-h-[4px]"
-                        style={{ height: `${height}%` }}
-                    />
-                </div>
-            ))}
-        </div>
-        <div className="flex justify-between mt-3 text-xs text-neutral-500">
-            <span>Mon</span>
-            <span>Sun</span>
-        </div>
-    </div>
-)
-
-const TeamVisual = () => (
+const GuidanceVisual = () => (
     <div className="space-y-3">
         {[
-            { name: 'Engineering', count: 24, health: 87 },
-            { name: 'Sales', count: 18, health: 82 },
-            { name: 'Marketing', count: 12, health: 91 },
-        ].map((team, i) => (
+            { action: 'Do this', text: '10-min morning sunlight for mood boost', type: 'do' },
+            { action: 'Avoid this', text: 'Back-to-back meetings without breaks', type: 'avoid' },
+            { action: 'Do this', text: 'Wind-down routine 30 min before bed', type: 'do' },
+        ].map((item, i) => (
             <div key={i} className="bg-white rounded-lg p-3 border border-neutral-200">
-                <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm text-neutral-700">{team.name}</span>
-                    <span className="text-xs text-neutral-500">{team.count} members</span>
+                <div className="flex items-center gap-2 mb-1">
+                    <span className={`text-xs font-medium ${item.type === 'do' ? 'text-emerald-600' : 'text-amber-600'}`}>
+                        {item.action}
+                    </span>
                 </div>
-                <div className="h-1.5 bg-neutral-200 rounded-full overflow-hidden">
-                    <div
-                        className="h-full bg-emerald-500 rounded-full"
-                        style={{ width: `${team.health}%` }}
-                    />
-                </div>
+                <p className="text-sm text-neutral-700">{item.text}</p>
             </div>
         ))}
     </div>
 )
 
-const ProgramVisual = () => (
+const ExperimentsVisual = () => (
     <div className="space-y-3">
         {[
-            { name: 'Sleep Challenge', participants: 156, improvement: '+12%' },
-            { name: 'Step Goal Program', participants: 203, improvement: '+8%' },
-            { name: 'Meditation Trial', participants: 89, improvement: '+15%' },
-        ].map((program, i) => (
+            { name: 'Stress reset routine', status: 'Active', day: 'Day 5/7' },
+            { name: 'Sleep consistency', status: 'Completed', day: '+20% focus' },
+            { name: 'Anxiety triggers', status: 'Upcoming', day: 'Starts Mon' },
+        ].map((exp, i) => (
             <div key={i} className="bg-white rounded-lg p-3 border border-neutral-200 flex justify-between items-center">
                 <div>
-                    <p className="text-sm text-neutral-700">{program.name}</p>
-                    <p className="text-xs text-neutral-500">{program.participants} participants</p>
+                    <p className="text-sm text-neutral-700">{exp.name}</p>
+                    <p className="text-xs text-neutral-500">{exp.day}</p>
                 </div>
-                <span className="text-emerald-600 text-sm font-medium">{program.improvement}</span>
+                <span className={`text-xs font-medium px-2 py-1 rounded-full ${
+                    exp.status === 'Active' ? 'bg-emerald-100 text-emerald-700' :
+                    exp.status === 'Completed' ? 'bg-sky-100 text-sky-700' :
+                    'bg-neutral-100 text-neutral-600'
+                }`}>{exp.status}</span>
+            </div>
+        ))}
+    </div>
+)
+
+const SprintsVisual = () => (
+    <div className="space-y-3">
+        {[
+            { month: 'January', theme: 'Sleep Consistency', active: true },
+            { month: 'February', theme: 'Energy Management', active: false },
+            { month: 'March', theme: 'Stress Recovery', active: false },
+        ].map((sprint, i) => (
+            <div key={i} className={`rounded-lg p-3 border ${sprint.active ? 'bg-emerald-50 border-emerald-200' : 'bg-white border-neutral-200'}`}>
+                <div className="flex justify-between items-center">
+                    <div>
+                        <p className="text-sm text-neutral-700 font-medium">{sprint.month}</p>
+                        <p className="text-xs text-neutral-500">{sprint.theme}</p>
+                    </div>
+                    {sprint.active && <span className="text-xs font-medium text-emerald-600">Active</span>}
+                </div>
             </div>
         ))}
     </div>

@@ -16,10 +16,10 @@ export function EnterpriseContact() {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 font-[family-name:var(--font-playfair)] mb-6">
-                        Ready to invest in your team's health?
+                        Feels human, not corporate.
                     </h2>
                     <p className="text-neutral-600 text-lg mb-10 max-w-2xl mx-auto">
-                        Get in touch to learn how NexFlow can help your organization reduce sick days, boost productivity, and build a healthier workforce.
+                        Simple pricing. No per-seat licensing. No long-term lock-ins. Just a flat monthly Health Ops fee that covers your team.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -22,8 +22,13 @@ function Header1() {
             description: "",
         },
         {
-            title: "How it Works",
-            href: "#how-it-works",
+            title: "Enterprise",
+            href: "/enterprise",
+            description: "",
+        },
+        {
+            title: "Playbook",
+            href: "/playbook",
             description: "",
         },
     ];
