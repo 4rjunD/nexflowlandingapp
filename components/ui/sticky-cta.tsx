@@ -55,7 +55,7 @@ export function StickyCTA() {
   return (
     <div
       className={cn(
-        "fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-t border-border shadow-lg",
+        "fixed bottom-0 left-0 right-0 z-50 bg-[#F6F4EF]/95 backdrop-blur-sm border-t border-[#E5E2DB] shadow-lg",
         "transform transition-transform duration-300",
         isVisible ? "translate-y-0" : "translate-y-full"
       )}
@@ -63,16 +63,16 @@ export function StickyCTA() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <p className="text-sm font-medium">
+            <p className="text-sm font-medium text-[#111111]">
               <span className="hidden sm:inline">Ready to stop guessing?</span>
               <span className="sm:hidden">Stop guessing.</span>
               {" "}
-              <span className="text-primary">Get early access.</span>
+              <span className="text-[#1F4D3A]">Get early access.</span>
             </p>
           </div>
 
           {isSuccess ? (
-            <div className="flex items-center gap-2 text-green-600">
+            <div className="flex items-center gap-2 text-[#1F4D3A]">
               <CheckCircle2 className="w-4 h-4" />
               <span className="text-sm font-medium">You&apos;re in!</span>
             </div>
@@ -85,9 +85,9 @@ export function StickyCTA() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 disabled={isSubmitting}
-                className="h-9 text-sm w-full sm:w-64"
+                className="h-9 text-sm w-full sm:w-64 border-[#D9D6CF]"
               />
-              <Button size="sm" type="submit" disabled={isSubmitting} className="gap-1 whitespace-nowrap">
+              <Button size="sm" type="submit" disabled={isSubmitting} className="gap-1 whitespace-nowrap bg-[#1F4D3A] hover:bg-[#163D2E] text-white">
                 {isSubmitting ? (
                   <Loader2 className="w-3 h-3 animate-spin" />
                 ) : (
@@ -101,7 +101,7 @@ export function StickyCTA() {
 
           <button
             onClick={() => setIsDismissed(true)}
-            className="absolute top-2 right-2 sm:relative sm:top-auto sm:right-auto p-1 text-muted-foreground hover:text-foreground"
+            className="absolute top-2 right-2 sm:relative sm:top-auto sm:right-auto p-1 text-[#999999] hover:text-[#111111]"
           >
             <X className="w-4 h-4" />
           </button>

@@ -6,9 +6,9 @@ export function BackedByResearch() {
   ];
 
   return (
-    <section className="py-12 md:py-16 border-y border-border/50">
+    <section className="py-12 md:py-16 border-y border-[#E5E2DB]">
       <div className="container mx-auto px-6">
-        <p className="text-center text-base text-muted-foreground mb-10">
+        <p className="text-center text-base text-[#6B6B6B] mb-10">
           Working with faculty advisors at top universities
         </p>
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20">

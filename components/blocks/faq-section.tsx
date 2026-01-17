@@ -69,15 +69,15 @@ function FAQItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="border-b border-border">
+    <div className="border-b border-[#E5E2DB]">
       <button
         onClick={onToggle}
         className="flex w-full items-center justify-between py-5 text-left gap-4"
       >
-        <span className="font-medium text-left">{question}</span>
+        <span className="font-medium text-left text-[#111111]">{question}</span>
         <ChevronDown
           className={cn(
-            "h-5 w-5 text-muted-foreground transition-transform duration-200 shrink-0",
+            "h-5 w-5 text-[#999999] transition-transform duration-200 shrink-0",
             isOpen && "rotate-180"
           )}
         />
@@ -88,7 +88,7 @@ function FAQItem({
           isOpen ? "max-h-96 pb-4" : "max-h-0"
         )}
       >
-        <p className="text-muted-foreground">{answer}</p>
+        <p className="text-[#6B6B6B]">{answer}</p>
       </div>
     </div>
   );
@@ -101,11 +101,11 @@ export function FAQSection() {
     <section className="py-12 md:py-20">
       <div className="container mx-auto max-w-3xl px-6">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-semibold lg:text-5xl">
+          <h2 className="text-4xl font-semibold lg:text-5xl text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>
             Questions? Answered.
           </h2>
         </div>
-        <div className="divide-y divide-border border-t border-border">
+        <div className="divide-y divide-[#E5E2DB] border-t border-[#E5E2DB]">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}

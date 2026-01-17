@@ -20,7 +20,7 @@ const itemVariants = {
 
 export function EnterpriseFeatures() {
     return (
-        <section className="py-24 md:py-32 bg-white">
+        <section className="py-24 md:py-32 bg-[#F6F4EF]">
             <div className="mx-auto max-w-6xl px-6">
                 <motion.div
                     className="text-center mb-16"
@@ -29,10 +29,10 @@ export function EnterpriseFeatures() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 font-[family-name:var(--font-playfair)]">
+                    <h2 className="text-3xl md:text-4xl font-medium text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>
                         What we do for your team
                     </h2>
-                    <p className="mt-4 text-neutral-600 max-w-2xl mx-auto">
+                    <p className="mt-4 text-[#6B6B6B] max-w-2xl mx-auto">
                         Physical health, mental wellbeing, and sustainable productivity. Not another HR checkbox. Real support that people actually use.
                     </p>
                 </motion.div>
@@ -71,16 +71,16 @@ export function EnterpriseFeatures() {
 
                 {/* What Leadership Gets */}
                 <motion.div
-                    className="mt-16 bg-neutral-50 rounded-2xl border border-neutral-200 p-8 md:p-12"
+                    className="mt-16 bg-white rounded-2xl border border-[#E5E2DB] p-8 md:p-12"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                    <p className="text-center text-2xl md:text-3xl font-medium text-neutral-900 mb-4 font-[family-name:var(--font-playfair)]">
+                    <p className="text-center text-2xl md:text-3xl font-medium text-[#111111] mb-4" style={{ fontFamily: '"New York", Georgia, serif' }}>
                         What leadership receives
                     </p>
-                    <p className="text-center text-neutral-600 mb-10 max-w-xl mx-auto">
+                    <p className="text-center text-[#6B6B6B] mb-10 max-w-xl mx-auto">
                         High-level engagement summaries and participation trends. No individual data. Ever.
                     </p>
 
@@ -105,16 +105,16 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ icon: Icon, title, description, children }: FeatureCardProps) => (
     <motion.div
-        className="bg-neutral-50 rounded-2xl border border-neutral-200 p-6 flex flex-col"
+        className="bg-white rounded-2xl border border-[#E5E2DB] p-6 flex flex-col"
         variants={itemVariants}
     >
         <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 rounded-xl bg-neutral-200 flex items-center justify-center">
-                <Icon className="w-5 h-5 text-neutral-600" />
+            <div className="w-10 h-10 rounded-xl bg-[#1F4D3A]/10 flex items-center justify-center">
+                <Icon className="w-5 h-5 text-[#1F4D3A]" />
             </div>
-            <h3 className="text-lg font-medium text-neutral-900">{title}</h3>
+            <h3 className="text-lg font-medium text-[#111111]">{title}</h3>
         </div>
-        <p className="text-neutral-600 text-sm mb-6">{description}</p>
+        <p className="text-[#6B6B6B] text-sm mb-6">{description}</p>
         <div className="mt-auto">
             {children}
         </div>
@@ -128,10 +128,10 @@ interface MetricCardProps {
 
 const MetricCard = ({ value, label }: MetricCardProps) => (
     <div className="text-center">
-        <p className="text-3xl md:text-4xl font-semibold text-emerald-600 font-[family-name:var(--font-playfair)]">
+        <p className="text-3xl md:text-4xl font-semibold text-[#1F4D3A]" style={{ fontFamily: '"New York", Georgia, serif' }}>
             {value}
         </p>
-        <p className="text-neutral-600 text-sm mt-1">{label}</p>
+        <p className="text-[#6B6B6B] text-sm mt-1">{label}</p>
     </div>
 )
 
@@ -142,13 +142,13 @@ const GuidanceVisual = () => (
             { action: 'Avoid this', text: 'Back-to-back meetings without breaks', type: 'avoid' },
             { action: 'Do this', text: 'Wind-down routine 30 min before bed', type: 'do' },
         ].map((item, i) => (
-            <div key={i} className="bg-white rounded-lg p-3 border border-neutral-200">
+            <div key={i} className="bg-[#F6F4EF] rounded-lg p-3 border border-[#E5E2DB]">
                 <div className="flex items-center gap-2 mb-1">
-                    <span className={`text-xs font-medium ${item.type === 'do' ? 'text-emerald-600' : 'text-amber-600'}`}>
+                    <span className={`text-xs font-medium ${item.type === 'do' ? 'text-[#1F4D3A]' : 'text-[#E5A53D]'}`}>
                         {item.action}
                     </span>
                 </div>
-                <p className="text-sm text-neutral-700">{item.text}</p>
+                <p className="text-sm text-[#111111]">{item.text}</p>
             </div>
         ))}
     </div>
@@ -161,15 +161,15 @@ const ExperimentsVisual = () => (
             { name: 'Sleep consistency', status: 'Completed', day: '+20% focus' },
             { name: 'Anxiety triggers', status: 'Upcoming', day: 'Starts Mon' },
         ].map((exp, i) => (
-            <div key={i} className="bg-white rounded-lg p-3 border border-neutral-200 flex justify-between items-center">
+            <div key={i} className="bg-[#F6F4EF] rounded-lg p-3 border border-[#E5E2DB] flex justify-between items-center">
                 <div>
-                    <p className="text-sm text-neutral-700">{exp.name}</p>
-                    <p className="text-xs text-neutral-500">{exp.day}</p>
+                    <p className="text-sm text-[#111111]">{exp.name}</p>
+                    <p className="text-xs text-[#999999]">{exp.day}</p>
                 </div>
                 <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                    exp.status === 'Active' ? 'bg-emerald-100 text-emerald-700' :
+                    exp.status === 'Active' ? 'bg-[#1F4D3A]/10 text-[#1F4D3A]' :
                     exp.status === 'Completed' ? 'bg-sky-100 text-sky-700' :
-                    'bg-neutral-100 text-neutral-600'
+                    'bg-[#EBE8E1] text-[#6B6B6B]'
                 }`}>{exp.status}</span>
             </div>
         ))}
@@ -183,13 +183,13 @@ const SprintsVisual = () => (
             { month: 'February', theme: 'Energy Management', active: false },
             { month: 'March', theme: 'Stress Recovery', active: false },
         ].map((sprint, i) => (
-            <div key={i} className={`rounded-lg p-3 border ${sprint.active ? 'bg-emerald-50 border-emerald-200' : 'bg-white border-neutral-200'}`}>
+            <div key={i} className={`rounded-lg p-3 border ${sprint.active ? 'bg-[#1F4D3A]/5 border-[#1F4D3A]/20' : 'bg-[#F6F4EF] border-[#E5E2DB]'}`}>
                 <div className="flex justify-between items-center">
                     <div>
-                        <p className="text-sm text-neutral-700 font-medium">{sprint.month}</p>
-                        <p className="text-xs text-neutral-500">{sprint.theme}</p>
+                        <p className="text-sm text-[#111111] font-medium">{sprint.month}</p>
+                        <p className="text-xs text-[#999999]">{sprint.theme}</p>
                     </div>
-                    {sprint.active && <span className="text-xs font-medium text-emerald-600">Active</span>}
+                    {sprint.active && <span className="text-xs font-medium text-[#1F4D3A]">Active</span>}
                 </div>
             </div>
         ))}

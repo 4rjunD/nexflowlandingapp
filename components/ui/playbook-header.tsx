@@ -7,11 +7,11 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Menu, MoveRight, X, Calendar } from "lucide-react";
+import { Menu, MoveRight, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
-function EnterpriseHeader() {
+function PlaybookHeader() {
     const navigationItems = [
         {
             title: "Home",
@@ -54,11 +54,10 @@ function EnterpriseHeader() {
                     <p className="font-semibold text-2xl tracking-tight font-[family-name:var(--font-geist-sans)]">NexFlow</p>
                 </div>
                 <div className="flex justify-end w-full gap-4">
-                    <Button asChild className="gap-2 bg-[#1F4D3A] hover:bg-[#163D2E] text-white">
-                        <Link href="https://cal.com/arjun-dixit-0nwkzi/30min" target="_blank">
-                            <Calendar className="w-4 h-4" />
-                            Book a Meeting
-                        </Link>
+                    <Button asChild className="bg-[#1F4D3A] hover:bg-[#163D2E] text-white gap-2">
+                        <a href="https://whop.com/nexflow-5714/" target="_blank" rel="noopener noreferrer">
+                            Get the Guide <MoveRight className="w-4 h-4" />
+                        </a>
                     </Button>
                 </div>
                 <div className="flex w-12 shrink lg:hidden items-end justify-end">
@@ -66,7 +65,7 @@ function EnterpriseHeader() {
                         {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                     </Button>
                     {isOpen && (
-                        <div className="absolute top-[116px] border-t flex flex-col w-full right-0 bg-background shadow-lg py-4 container gap-8">
+                        <div className="absolute top-[116px] border-t border-[#E5E2DB] flex flex-col w-full right-0 bg-[#F6F4EF] shadow-lg py-4 container gap-8">
                             {navigationItems.map((item) => (
                                 <div key={item.title}>
                                     <div className="flex flex-col gap-2">
@@ -81,11 +80,10 @@ function EnterpriseHeader() {
                                     </div>
                                 </div>
                             ))}
-                            <Button asChild className="gap-2 bg-[#1F4D3A] hover:bg-[#163D2E] text-white">
-                                <Link href="https://cal.com/arjun-dixit-0nwkzi/30min" target="_blank">
-                                    <Calendar className="w-4 h-4" />
-                                    Book a Meeting
-                                </Link>
+                            <Button asChild className="bg-[#1F4D3A] hover:bg-[#163D2E] text-white gap-2">
+                                <a href="https://whop.com/nexflow-5714/" target="_blank" rel="noopener noreferrer">
+                                    Get the Guide <MoveRight className="w-4 h-4" />
+                                </a>
                             </Button>
                         </div>
                     )}
@@ -95,4 +93,4 @@ function EnterpriseHeader() {
     );
 }
 
-export { EnterpriseHeader };
+export { PlaybookHeader };

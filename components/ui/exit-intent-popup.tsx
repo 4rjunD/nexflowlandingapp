@@ -62,26 +62,26 @@ export function ExitIntentPopup() {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md bg-[#F6F4EF] border-[#E5E2DB]">
         {isSuccess ? (
           <div className="flex flex-col items-center justify-center py-8 text-center">
-            <CheckCircle2 className="h-16 w-16 text-green-500 mb-4" />
-            <DialogTitle className="text-2xl mb-2">You&apos;re on the list!</DialogTitle>
-            <DialogDescription className="text-base">
+            <CheckCircle2 className="h-16 w-16 text-[#1F4D3A] mb-4" />
+            <DialogTitle className="text-2xl mb-2 text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>You&apos;re on the list!</DialogTitle>
+            <DialogDescription className="text-base text-[#6B6B6B]">
               We&apos;ll send you early access details and your exclusive pricing before anyone else.
             </DialogDescription>
-            <Button className="mt-6" onClick={() => setIsOpen(false)}>
+            <Button className="mt-6 bg-[#1F4D3A] hover:bg-[#163D2E] text-white" onClick={() => setIsOpen(false)}>
               Got it
             </Button>
           </div>
         ) : (
           <>
             <DialogHeader className="text-center sm:text-center">
-              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <Gift className="h-6 w-6 text-primary" />
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#1F4D3A]/10">
+                <Gift className="h-6 w-6 text-[#1F4D3A]" />
               </div>
-              <DialogTitle className="text-2xl">One more thing.</DialogTitle>
-              <DialogDescription className="text-base pt-2">
+              <DialogTitle className="text-2xl text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>One more thing.</DialogTitle>
+              <DialogDescription className="text-base pt-2 text-[#6B6B6B]">
                 Get early access and be the first to know what actually works for your body.
               </DialogDescription>
             </DialogHeader>
@@ -93,12 +93,12 @@ export function ExitIntentPopup() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 disabled={isSubmitting}
-                className="h-12 text-base"
+                className="h-12 text-base border-[#D9D6CF] bg-white"
               />
               {error && (
-                <p className="text-sm text-red-500">{error}</p>
+                <p className="text-sm text-[#C45C5C]">{error}</p>
               )}
-              <Button type="submit" className="w-full gap-2 h-12" disabled={isSubmitting}>
+              <Button type="submit" className="w-full gap-2 h-12 bg-[#1F4D3A] hover:bg-[#163D2E] text-white" disabled={isSubmitting}>
                 {isSubmitting ? (
                   <>
                     <Loader2 className="h-4 w-4 animate-spin" />
@@ -111,7 +111,7 @@ export function ExitIntentPopup() {
                   </>
                 )}
               </Button>
-              <p className="text-xs text-center text-muted-foreground">
+              <p className="text-xs text-center text-[#999999]">
                 No spam. Unsubscribe anytime.
               </p>
             </form>

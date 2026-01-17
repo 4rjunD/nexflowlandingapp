@@ -19,7 +19,7 @@ const itemVariants = {
 
 export function EnterpriseFeaturesSection() {
     return (
-        <section className="relative py-24 md:py-32 bg-neutral-50 overflow-hidden">
+        <section className="relative py-24 md:py-32 bg-[#EBE8E1] overflow-hidden">
             <div className="container max-w-[1220px] w-full px-6 md:px-10 relative z-10 mx-auto">
                 <motion.div
                     className="grid grid-cols-1 gap-16 md:gap-12 w-full items-center md:grid-cols-2"
@@ -34,23 +34,23 @@ export function EnterpriseFeaturesSection() {
                         variants={itemVariants}
                     >
                         <div className="space-y-2 md:space-y-1">
-                            <h2 className="text-neutral-900 text-3xl md:text-[40px] font-medium leading-tight md:leading-[53px] font-[family-name:var(--font-playfair)]">
+                            <h2 className="text-[#111111] text-3xl md:text-[40px] font-medium leading-tight md:leading-[53px]" style={{ fontFamily: '"New York", Georgia, serif' }}>
                                 How it works.
                             </h2>
                         </div>
 
-                        <p className="text-neutral-600 text-sm md:text-[15px] leading-6 mt-2">
+                        <p className="text-[#6B6B6B] text-sm md:text-[15px] leading-6 mt-2">
                             Every person gets a personal health baseline and ongoing support for physical and mental wellbeing. Reduced burnout. Improved focus. People who feel good do better work.
                         </p>
 
                         <ul className="mt-6 space-y-4">
                             <li className="flex items-start gap-3">
-                                <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center mt-0.5">
-                                    <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                <div className="w-5 h-5 rounded-full bg-[#1F4D3A]/10 flex items-center justify-center mt-0.5">
+                                    <div className="w-2 h-2 rounded-full bg-[#1F4D3A]"></div>
                                 </div>
                                 <div>
-                                    <p className="text-neutral-900 font-medium">Physical + mental health</p>
-                                    <p className="text-neutral-500 text-sm">Sleep, energy, stress levels, anxiety, and mood tracked together</p>
+                                    <p className="text-[#111111] font-medium">Physical + mental health</p>
+                                    <p className="text-[#6B6B6B] text-sm">Sleep, energy, stress levels, anxiety, and mood tracked together</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -58,17 +58,17 @@ export function EnterpriseFeaturesSection() {
                                     <div className="w-2 h-2 rounded-full bg-sky-500"></div>
                                 </div>
                                 <div>
-                                    <p className="text-neutral-900 font-medium">Not an HR tool</p>
-                                    <p className="text-neutral-500 text-sm">We work directly with your people. Private, personal, no surveillance</p>
+                                    <p className="text-[#111111] font-medium">Not an HR tool</p>
+                                    <p className="text-[#6B6B6B] text-sm">We work directly with your people. Private, personal, no surveillance</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-5 h-5 rounded-full bg-amber-100 flex items-center justify-center mt-0.5">
-                                    <div className="w-2 h-2 rounded-full bg-amber-500"></div>
+                                <div className="w-5 h-5 rounded-full bg-[#E5A53D]/10 flex items-center justify-center mt-0.5">
+                                    <div className="w-2 h-2 rounded-full bg-[#E5A53D]"></div>
                                 </div>
                                 <div>
-                                    <p className="text-neutral-900 font-medium">Productivity that lasts</p>
-                                    <p className="text-neutral-500 text-sm">When people feel better, they focus better. Less burnout, more output</p>
+                                    <p className="text-[#111111] font-medium">Productivity that lasts</p>
+                                    <p className="text-[#6B6B6B] text-sm">When people feel better, they focus better. Less burnout, more output</p>
                                 </div>
                             </li>
                         </ul>
@@ -79,7 +79,7 @@ export function EnterpriseFeaturesSection() {
                         className="relative mt-10 md:mt-0 mx-auto w-full"
                         variants={itemVariants}
                     >
-                        <div className="relative w-full bg-white rounded-2xl border border-neutral-200 p-6 shadow-lg">
+                        <div className="relative w-full bg-white rounded-2xl border border-[#E5E2DB] p-6 shadow-lg">
                             <AnalyticsDashboard />
                         </div>
                     </motion.div>
@@ -101,35 +101,35 @@ function AnalyticsDashboard() {
     ];
 
     return (
-        <div className="space-y-6 font-[family-name:var(--font-geist-sans)]">
+        <div className="space-y-6" style={{ fontFamily: 'Inter, -apple-system, sans-serif' }}>
             <div className="flex items-center justify-between">
                 <div>
-                    <h3 className="text-lg font-medium text-neutral-900 font-[family-name:var(--font-playfair)]">Weekly Trends</h3>
-                    <p className="text-xs text-neutral-500">Organization-wide averages</p>
+                    <h3 className="text-lg font-medium text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>Weekly Trends</h3>
+                    <p className="text-xs text-[#999999]">Organization-wide averages</p>
                 </div>
                 <div className="flex gap-4 text-xs">
                     <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                        <span className="text-neutral-600">Sleep</span>
+                        <div className="w-2 h-2 rounded-full bg-[#1F4D3A]"></div>
+                        <span className="text-[#6B6B6B]">Sleep</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-sky-500"></div>
-                        <span className="text-neutral-600">Energy</span>
+                        <span className="text-[#6B6B6B]">Energy</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-amber-500"></div>
-                        <span className="text-neutral-600">Focus</span>
+                        <div className="w-2 h-2 rounded-full bg-[#E5A53D]"></div>
+                        <span className="text-[#6B6B6B]">Focus</span>
                     </div>
                 </div>
             </div>
 
             {/* Chart */}
-            <div className="h-48 flex items-end justify-between gap-2 bg-neutral-50 rounded-xl p-4">
+            <div className="h-48 flex items-end justify-between gap-2 bg-[#F6F4EF] rounded-xl p-4">
                 {weeklyData.map((day, i) => (
                     <div key={i} className="flex-1 flex flex-col items-center gap-1">
                         <div className="w-full flex gap-0.5 items-end justify-center h-36">
                             <div
-                                className="w-2 bg-emerald-500 rounded-t"
+                                className="w-2 bg-[#1F4D3A] rounded-t"
                                 style={{ height: `${day.sleep}%` }}
                             ></div>
                             <div
@@ -137,31 +137,31 @@ function AnalyticsDashboard() {
                                 style={{ height: `${day.energy}%` }}
                             ></div>
                             <div
-                                className="w-2 bg-amber-500 rounded-t"
+                                className="w-2 bg-[#E5A53D] rounded-t"
                                 style={{ height: `${day.focus}%` }}
                             ></div>
                         </div>
-                        <span className="text-xs text-neutral-500">{day.day}</span>
+                        <span className="text-xs text-[#999999]">{day.day}</span>
                     </div>
                 ))}
             </div>
 
             {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-4 pt-4 border-t border-neutral-200">
+            <div className="grid grid-cols-3 gap-4 pt-4 border-t border-[#E5E2DB]">
                 <div>
-                    <p className="text-xs text-neutral-500 uppercase tracking-wider">Avg Sleep</p>
-                    <p className="text-2xl font-light text-neutral-900 font-[family-name:var(--font-playfair)]">84<span className="text-sm text-neutral-400">%</span></p>
-                    <p className="text-xs text-emerald-600">+5% vs last week</p>
+                    <p className="text-xs text-[#999999] uppercase tracking-wider">Avg Sleep</p>
+                    <p className="text-2xl font-light text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>84<span className="text-sm text-[#999999]">%</span></p>
+                    <p className="text-xs text-[#1F4D3A]">+5% vs last week</p>
                 </div>
                 <div>
-                    <p className="text-xs text-neutral-500 uppercase tracking-wider">Avg Energy</p>
-                    <p className="text-2xl font-light text-neutral-900 font-[family-name:var(--font-playfair)]">80<span className="text-sm text-neutral-400">%</span></p>
-                    <p className="text-xs text-emerald-600">+3% vs last week</p>
+                    <p className="text-xs text-[#999999] uppercase tracking-wider">Avg Energy</p>
+                    <p className="text-2xl font-light text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>80<span className="text-sm text-[#999999]">%</span></p>
+                    <p className="text-xs text-[#1F4D3A]">+3% vs last week</p>
                 </div>
                 <div>
-                    <p className="text-xs text-neutral-500 uppercase tracking-wider">Avg Focus</p>
-                    <p className="text-2xl font-light text-neutral-900 font-[family-name:var(--font-playfair)]">83<span className="text-sm text-neutral-400">%</span></p>
-                    <p className="text-xs text-emerald-600">+7% vs last week</p>
+                    <p className="text-xs text-[#999999] uppercase tracking-wider">Avg Focus</p>
+                    <p className="text-2xl font-light text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>83<span className="text-sm text-[#999999]">%</span></p>
+                    <p className="text-xs text-[#1F4D3A]">+7% vs last week</p>
                 </div>
             </div>
         </div>

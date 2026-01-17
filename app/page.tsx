@@ -9,7 +9,7 @@ import { StickyCTA } from '@/components/ui/sticky-cta'
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#F6F4EF]">
       <Header1 />
       <Hero />
       <BackedByResearch />

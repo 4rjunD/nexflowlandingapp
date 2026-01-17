@@ -7,7 +7,7 @@ import { EnterpriseContact } from '@/components/blocks/enterprise-contact'
 
 export default function Enterprise() {
   return (
-    <main>
+    <main className="bg-[#F6F4EF]">
       <EnterpriseHeader />
       <EnterpriseHero />
       <EnterpriseFeaturesSection />
