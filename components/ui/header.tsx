@@ -21,6 +21,11 @@ function Header1() {
             href: "/",
             description: "",
         },
+        {
+            title: "Learn",
+            href: "/learn",
+            description: "",
+        },
     ];
 
     const [isOpen, setOpen] = useState(false);
