@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Header1 } from "@/components/ui/header";
 import { Footer7 } from "@/components/ui/footer-7";
-import { newsletterEntries } from "@/components/blocks/newsletter-section";
+import { newsletterEntries } from "@/lib/newsletter-data";
 
 export const metadata: Metadata = {
   title: "Learn | NexFlow - AI Health Insights & Wearable Science",
