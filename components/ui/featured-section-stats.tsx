@@ -22,9 +22,9 @@ export default function FeaturedSectionStats() {
     <section className="w-full max-w-6xl mx-auto text-left pt-8 pb-32">
       <div className="px-4">
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-medium text-[#111111] mb-16" style={{ fontFamily: 'Inter, -apple-system, sans-serif' }}>
-          Everything you need to take control of your health.{" "}
+          What you get for $1.{" "}
           <span className="text-[#6B6B6B]">
-            A step-by-step system for reading your wearable data, running personal experiments, and catching warning signs before your doctor does.
+            The same frameworks used by biohackers, longevity enthusiasts, and quantified-self pioneers—distilled into actionable steps anyone can follow.
           </span>
         </h3>
 

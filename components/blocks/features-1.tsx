@@ -7,8 +7,8 @@ export function Features() {
         <section id="how-it-works" className="bg-[#EBE8E1] py-8 md:py-14 scroll-mt-24">
             <div className="@container mx-auto max-w-5xl px-6">
                 <div className="text-center">
-                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>Simple as 1, 2, proof.</h2>
-                    <p className="mt-2 text-[#6B6B6B]">Two weeks. One habit. Real answers.</p>
+                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>Results in 14 days. Guaranteed.</h2>
+                    <p className="mt-2 text-[#6B6B6B]">Connect. Test one habit. See the proof. Three steps to finally knowing what works.</p>
                 </div>
                 <div className="mx-auto mt-6 grid max-w-sm md:max-w-full grid-cols-1 md:grid-cols-3 gap-6 *:text-center md:mt-8">
                     <Card className="group shadow-black-950/5 bg-white border-[#E5E2DB]">

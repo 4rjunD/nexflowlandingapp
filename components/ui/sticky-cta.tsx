@@ -64,10 +64,10 @@ export function StickyCTA() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-3">
             <p className="text-sm font-medium text-[#111111]">
-              <span className="hidden sm:inline">Ready to stop guessing?</span>
-              <span className="sm:hidden">Stop guessing.</span>
+              <span className="hidden sm:inline">Only 500 founding spots left.</span>
+              <span className="sm:hidden">500 spots left.</span>
               {" "}
-              <span className="text-[#1F4D3A]">Get early access.</span>
+              <span className="text-[#1F4D3A]">Lock in lifetime pricing.</span>
             </p>
           </div>
 

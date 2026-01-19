@@ -47,20 +47,20 @@ function Hero() {
         <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2">
           <div className="flex gap-4 flex-col order-2 md:order-1">
             <div>
-              <Badge variant="outline" className="border-[#1F4D3A] text-[#1F4D3A]">Launching Q1 2026</Badge>
+              <Badge variant="outline" className="border-[#1F4D3A] text-[#1F4D3A]">Only 500 founding member spots</Badge>
             </div>
             <div className="flex gap-4 flex-col">
               <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>
-                Life&apos;s too short for generic advice.
+                Know what actually works for your body.
               </h1>
               <p className="text-xl leading-relaxed tracking-tight text-[#6B6B6B] max-w-md text-left">
-                Supplements. Routines. Sleep hacks. How much have you spent on things that didn&apos;t work? Pick one. Test it. See the proof. Optimize your lifestyle.
+                Stop guessing. Connect your watch, pick one habit, and see real proof in 14 days. No more wasting money on supplements and routines that don&apos;t work for <em>you</em>.
               </p>
             </div>
             {isSuccess ? (
               <div className="flex items-center gap-2 text-[#1F4D3A]">
                 <CheckCircle2 className="w-5 h-5" />
-                <span className="font-medium">You&apos;re on the list! We&apos;ll be in touch soon.</span>
+                <span className="font-medium">You&apos;re in! Check your inbox for next steps.</span>
               </div>
             ) : (
               <div className="flex flex-col gap-3">
@@ -82,13 +82,13 @@ function Hero() {
                       </>
                     ) : (
                       <>
-                        Get Early Access <MoveRight className="w-4 h-4" />
+                        Claim Your Spot <MoveRight className="w-4 h-4" />
                       </>
                     )}
                   </Button>
                 </form>
                 <p className="text-sm text-[#999999]">
-                  Free to start. No credit card required.
+                  Founding members get lifetime pricing. No credit card required.
                 </p>
               </div>
             )}
