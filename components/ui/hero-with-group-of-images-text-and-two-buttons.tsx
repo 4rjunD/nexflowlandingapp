@@ -42,7 +42,7 @@ function Hero() {
   };
 
   return (
-    <div className="w-full pt-36 pb-8 lg:pt-40 lg:pb-14">
+    <div className="w-full pt-36 pb-8 lg:pt-40 lg:pb-14 bg-white">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2">
           <div className="flex gap-4 flex-col order-2 md:order-1">
