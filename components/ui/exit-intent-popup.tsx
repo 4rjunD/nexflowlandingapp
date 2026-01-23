@@ -80,7 +80,7 @@ export function ExitIntentPopup() {
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#1F4D3A]/10">
                 <Gift className="h-6 w-6 text-[#1F4D3A]" />
               </div>
-              <DialogTitle className="text-2xl text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>Wait—don&apos;t leave empty-handed.</DialogTitle>
+              <DialogTitle className="text-2xl text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>Wait, don&apos;t leave empty-handed.</DialogTitle>
               <DialogDescription className="text-base pt-2 text-[#6B6B6B]">
                 Join 500 founding members getting lifetime pricing and early access. You&apos;ll be the first to finally know what works for your body.
               </DialogDescription>

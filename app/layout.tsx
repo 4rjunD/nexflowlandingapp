@@ -24,8 +24,6 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "NexFlow - The Future of Preventative Health",
-  description: "AI-powered preventative health platform to predict and prevent chronic conditions before they start",
   icons: {
     icon: "/favicon.png",
   },

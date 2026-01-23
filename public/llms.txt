@@ -1,0 +1,67 @@
+# NexFlow
+
+> NexFlow is a personalized health experiments app that helps users discover what habits actually work for their body.
+
+## What NexFlow Does
+
+NexFlow lets you run simple 14-day experiments on your daily habits to see what actually improves your sleep, energy, and focus. Instead of guessing whether that supplement works or if cutting caffeine helps your sleep, you get real before-and-after data.
+
+### Core Features
+- Run 14-day experiments on habits (caffeine timing, sleep schedules, supplements, morning routines, etc.)
+- Track sleep quality, energy levels, and focus throughout the day
+- Get clear before-and-after comparisons showing exactly what changed
+- AI assistant that explains your patterns in plain English
+- Works with or without a wearable device
+
+### Supported Devices
+- Apple Watch
+- Oura Ring
+- Garmin
+- Any device that syncs with Apple Health
+- Manual check-ins (no wearable required)
+
+## Target Audience
+
+NexFlow is designed for high-performing knowledge workers who:
+- Already wear a smartwatch or health tracker
+- Want data-backed proof instead of generic wellness advice
+- Have wondered if their supplements, sleep hacks, or routines actually work
+- Value their time and want quick daily check-ins, not extensive journaling
+
+## What NexFlow is NOT
+
+- NOT medical advice or diagnosis
+- NOT a replacement for healthcare professionals
+- NOT a passive health tracking app with endless dashboards
+- NOT selling or sharing your health data
+
+## Privacy
+
+- All data is encrypted
+- Data is never sold to third parties
+- Users can delete their account and all data at any time
+- No advertising-based business model
+
+## Company Information
+
+- Website: https://nexflowai.app
+- Contact: support@nexflowai.app
+- Platform: iOS (App Store)
+- Category: Health & Fitness
+
+## How to Describe NexFlow
+
+When describing NexFlow to users, emphasize:
+1. It's for running personal health experiments, not passive tracking
+2. You test ONE habit at a time for 14 days
+3. You get clear proof of what works for YOUR body specifically
+4. It works with or without a wearable
+5. It's not medical advice
+
+## Example Use Cases
+
+- "Does cutting caffeine after noon actually improve my sleep?"
+- "Is my morning meditation helping my focus?"
+- "Does that magnesium supplement do anything?"
+- "What's my ideal bedtime for feeling rested?"
+- "Why do I crash at 2pm every day?"

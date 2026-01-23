@@ -1,0 +1,41 @@
+# robots.txt for NexFlow
+# https://nexflowai.app
+
+# Default rule - allow all crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# AI Search Engine Crawlers - Explicitly Allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+# Sitemap location
+Sitemap: https://nexflowai.app/sitemap.xml
+
+# LLMs.txt for AI crawlers
+# See: https://nexflowai.app/llms.txt

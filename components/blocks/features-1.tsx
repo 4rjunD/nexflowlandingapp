@@ -1,55 +1,53 @@
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Watch, FlaskConical, TrendingUp } from 'lucide-react'
-import { ReactNode } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
 
 export function Features() {
     return (
-        <section id="how-it-works" className="bg-[#EBE8E1] py-8 md:py-14 scroll-mt-24">
-            <div className="@container mx-auto max-w-5xl px-6">
-                <div className="text-center">
-                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>Results in 14 days. Guaranteed.</h2>
-                    <p className="mt-2 text-[#6B6B6B]">Connect. Test one habit. See the proof. Three steps to finally knowing what works.</p>
+        <section id="how-it-works" className="bg-[#EBE8E1] py-16 md:py-24 lg:py-28 scroll-mt-24" aria-labelledby="how-it-works-heading">
+            <div className="container mx-auto max-w-5xl px-4 sm:px-6">
+                <div className="text-center mb-10 md:mb-14">
+                    <h2 id="how-it-works-heading" className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>Finally answer the questions you've been asking</h2>
+                    <p className="mt-4 text-[#6B6B6B] max-w-2xl mx-auto text-base sm:text-lg">Run simple 14-day experiments on the habits that matter to you. Get real answers, not more data.</p>
                 </div>
-                <div className="mx-auto mt-6 grid max-w-sm md:max-w-full grid-cols-1 md:grid-cols-3 gap-6 *:text-center md:mt-8">
-                    <Card className="group shadow-black-950/5 bg-white border-[#E5E2DB]">
-                        <CardHeader className="pb-3">
-                            <CardDecorator>
-                                <Watch className="size-6 text-[#1F4D3A]" aria-hidden />
-                            </CardDecorator>
-
-                            <h3 className="mt-6 font-medium text-[#111111]">1. Connect</h3>
-                        </CardHeader>
-
-                        <CardContent>
-                            <p className="text-sm text-[#6B6B6B]">Sync your phone, watch, or just log how you feel. We capture your baseline automatically.</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
+                    <Card className="bg-white border-[#E5E2DB] p-5 sm:p-6">
+                        <CardContent className="p-0">
+                            <p className="text-[#111111] font-medium mb-2 text-base sm:text-lg">"Does my morning routine actually help?"</p>
+                            <p className="text-sm sm:text-base text-[#6B6B6B]">Test whether that 5am wake-up, cold shower, or meditation is improving your focus or just making you tired.</p>
                         </CardContent>
                     </Card>
 
-                    <Card className="group shadow-black-950/5 bg-white border-[#E5E2DB]">
-                        <CardHeader className="pb-3">
-                            <CardDecorator>
-                                <FlaskConical className="size-6 text-[#1F4D3A]" aria-hidden />
-                            </CardDecorator>
-
-                            <h3 className="mt-6 font-medium text-[#111111]">2. Test</h3>
-                        </CardHeader>
-
-                        <CardContent>
-                            <p className="text-sm text-[#6B6B6B]">Pick a habit you&apos;ve been curious about. No caffeine. More sleep. Cold showers. Anything.</p>
+                    <Card className="bg-white border-[#E5E2DB] p-5 sm:p-6">
+                        <CardContent className="p-0">
+                            <p className="text-[#111111] font-medium mb-2 text-base sm:text-lg">"Should I cut caffeine after noon?"</p>
+                            <p className="text-sm sm:text-base text-[#6B6B6B]">Find out if your afternoon coffee is really hurting your sleep, or if that's just something people say.</p>
                         </CardContent>
                     </Card>
 
-                    <Card className="group shadow-black-950/5 bg-white border-[#E5E2DB]">
-                        <CardHeader className="pb-3">
-                            <CardDecorator>
-                                <TrendingUp className="size-6 text-[#1F4D3A]" aria-hidden />
-                            </CardDecorator>
+                    <Card className="bg-white border-[#E5E2DB] p-5 sm:p-6">
+                        <CardContent className="p-0">
+                            <p className="text-[#111111] font-medium mb-2 text-base sm:text-lg">"Why do I crash at 2pm every day?"</p>
+                            <p className="text-sm sm:text-base text-[#6B6B6B]">Experiment with lunch timing, meal size, or a midday walk to see what actually fixes your afternoon slump.</p>
+                        </CardContent>
+                    </Card>
 
-                            <h3 className="mt-6 font-medium text-[#111111]">3. Know</h3>
-                        </CardHeader>
+                    <Card className="bg-white border-[#E5E2DB] p-5 sm:p-6">
+                        <CardContent className="p-0">
+                            <p className="text-[#111111] font-medium mb-2 text-base sm:text-lg">"Is this supplement doing anything?"</p>
+                            <p className="text-sm sm:text-base text-[#6B6B6B]">Stop guessing if magnesium or ashwagandha is worth it. Run a controlled test and see real changes (or not).</p>
+                        </CardContent>
+                    </Card>
 
-                        <CardContent>
-                            <p className="text-sm text-[#6B6B6B]">See exactly what changed. Sleep. Energy. Focus. Now you know what works for you.</p>
+                    <Card className="bg-white border-[#E5E2DB] p-5 sm:p-6">
+                        <CardContent className="p-0">
+                            <p className="text-[#111111] font-medium mb-2 text-base sm:text-lg">"What's my ideal sleep schedule?"</p>
+                            <p className="text-sm sm:text-base text-[#6B6B6B]">Test different bedtimes and wake times to find when you actually feel most rested and alert.</p>
+                        </CardContent>
+                    </Card>
+
+                    <Card className="bg-white border-[#E5E2DB] p-5 sm:p-6">
+                        <CardContent className="p-0">
+                            <p className="text-[#111111] font-medium mb-2 text-base sm:text-lg">"Does alcohol really affect my sleep?"</p>
+                            <p className="text-sm sm:text-base text-[#6B6B6B]">Compare two weeks with and without that evening glass of wine. See the difference in your own data.</p>
                         </CardContent>
                     </Card>
                 </div>
@@ -57,10 +55,3 @@ export function Features() {
         </section>
     )
 }
-
-const CardDecorator = ({ children }: { children: ReactNode }) => (
-    <div aria-hidden className="relative mx-auto size-36 [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]">
-        <div className="absolute inset-0 [--border:black] dark:[--border:white] bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:24px_24px] opacity-10"/>
-        <div className="bg-background absolute inset-0 m-auto flex size-12 items-center justify-center border-t border-l">{children}</div>
-    </div>
-)

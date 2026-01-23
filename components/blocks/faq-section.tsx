@@ -3,59 +3,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const faqs = [
-  {
-    question: "What does NexFlow do?",
-    answer:
-      "NexFlow runs 2 week experiments on your habits and shows how your sleep, energy, and focus changed using your data.",
-  },
-  {
-    question: "How is this different from my health app?",
-    answer:
-      "Your health app tracks. NexFlow tests. You change one habit and we show clear before and after so you know what actually works for you.",
-  },
-  {
-    question: "Do I need a smartwatch?",
-    answer:
-      "No. NexFlow works with Apple Health, most wearables, or simple manual logging.",
-  },
-  {
-    question: "Who is NexFlow for?",
-    answer:
-      "People who already care about health and performance and want data backed answers instead of generic advice.",
-  },
-  {
-    question: "Is there a free version or free trial?",
-    answer:
-      "No. NexFlow is paid only so the product can stay focused on serious users and never rely on ads or selling data.",
-  },
-  {
-    question: "What do I get when I sign up?",
-    answer:
-      "You can connect your data, set up 2 week experiments, see before and after results, and chat with the health assistant about your patterns.",
-  },
-  {
-    question: "How long until I see results?",
-    answer:
-      "Usually by the end of your first 2 week experiment you will see how that habit affected your sleep, energy, or focus.",
-  },
-  {
-    question: "Is this medical advice?",
-    answer:
-      "No. NexFlow is for habit and routine experiments. It does not diagnose or treat. Talk to your doctor for medical decisions.",
-  },
-  {
-    question: "Is my data private?",
-    answer:
-      "Yes. Your data is encrypted, never sold, and you can delete your account and all data at any time.",
-  },
-  {
-    question: "What can I test with NexFlow?",
-    answer:
-      "Caffeine timing, sleep schedule, steps, exercise, screens, cold showers, meditation, alcohol windows, and other daily habits.",
-  },
-];
+import { faqData } from "@/lib/faq-data";
 
 function FAQItem({
   question,
@@ -72,23 +20,25 @@ function FAQItem({
     <div className="border-b border-[#E5E2DB]">
       <button
         onClick={onToggle}
-        className="flex w-full items-center justify-between py-5 text-left gap-4"
+        className="flex w-full items-center justify-between py-4 sm:py-5 text-left gap-4"
+        aria-expanded={isOpen}
       >
-        <span className="font-medium text-left text-[#111111]">{question}</span>
+        <span className="font-medium text-left text-[#111111] text-sm sm:text-base">{question}</span>
         <ChevronDown
           className={cn(
             "h-5 w-5 text-[#999999] transition-transform duration-200 shrink-0",
             isOpen && "rotate-180"
           )}
+          aria-hidden="true"
         />
       </button>
       <div
         className={cn(
           "overflow-hidden transition-all duration-200",
-          isOpen ? "max-h-96 pb-4" : "max-h-0"
+          isOpen ? "max-h-[500px] pb-4 sm:pb-5" : "max-h-0"
         )}
       >
-        <p className="text-[#6B6B6B]">{answer}</p>
+        <p className="text-[#6B6B6B] text-sm sm:text-base leading-relaxed">{answer}</p>
       </div>
     </div>
   );
@@ -98,15 +48,18 @@ export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-12 md:py-20">
-      <div className="container mx-auto max-w-3xl px-6">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-semibold lg:text-5xl text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>
+    <section className="py-16 md:py-24 lg:py-28" aria-labelledby="faq-heading">
+      <div className="container mx-auto max-w-3xl px-4 sm:px-6">
+        <div className="text-center mb-10 md:mb-14">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#111111]" style={{ fontFamily: '"New York", Georgia, serif' }}>
             Questions? Answered.
           </h2>
+          <p className="mt-4 text-[#6B6B6B] text-base sm:text-lg">
+            Everything you need to know about health experiments with NexFlow.
+          </p>
         </div>
         <div className="divide-y divide-[#E5E2DB] border-t border-[#E5E2DB]">
-          {faqs.map((faq, index) => (
+          {faqData.map((faq, index) => (
             <FAQItem
               key={index}
               question={faq.question}
