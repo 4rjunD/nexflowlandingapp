@@ -49,7 +49,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-semibold mb-4">4. Eligibility</h2>
             <p className="text-muted-foreground leading-relaxed">
-              You must be at least 18 years old to use NexFlow. By using the App, you represent and warrant that you are at least 18 years of age and have the legal capacity to enter into this agreement. If you are under 18, do not use this App.
+              By using the App, you represent and warrant that you have the legal capacity to enter into this agreement.
             </p>
           </section>
 
