@@ -24,8 +24,15 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  title: "NexFlow - AI Health Optimization App",
+  description: "Prevent diabetes and chronic disease with AI-powered health insights. Track your IRScore, connect wearables, and get personalized recommendations.",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
   },
 };
 
