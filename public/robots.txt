@@ -5,6 +5,22 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /payment-success/
+Disallow: /payment-cancel/
+
+# Google crawlers - Explicitly Allowed
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
 
 # AI Search Engine Crawlers - Explicitly Allowed
 User-agent: GPTBot
